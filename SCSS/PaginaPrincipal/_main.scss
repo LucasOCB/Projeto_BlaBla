@@ -1,0 +1,340 @@
+//medidas
+@media(max-width: 920px){
+    #main{
+        .links{
+            .flex{
+                flex-direction: column;
+                gap:20px;
+                .link{
+                    width:90% !important;
+                    margin:0 auto;
+                    .divisoria{
+                        .msg{
+                            h1{
+                                font-size: 2.3em !important;
+                            }
+                        }
+                    }
+                    &:nth-child(1){
+                        .divisoria{
+                            .msg{
+                                h1{
+                                    width:100% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:801px) {
+    #main{
+        .logo{
+            .conteiner{
+                img{
+                    left:50%;
+                }
+            }
+            .frase{
+                p{
+                    left:10px;
+                }
+            }
+        }
+        .descricao{
+            div{
+                p{
+                    width:50%;
+                }
+            }
+        }
+        .imagens{
+            #carrocel{
+                justify-content: space-between;
+                gap:0%;
+                padding:0 !important;
+                .imagem{
+                    width:10%;
+                    img{
+                        max-width:220px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:800px){
+    #main{
+        .logo{
+            .conteiner{
+                img{
+                        left:25%;
+                    }
+            }
+            .frase{
+                p{
+                    left:10px;
+                }
+            }
+        }
+        .imagens{
+            #carrocel{
+                gap:3%;
+                padding:0 6%;
+                .imagem{
+                    width:10%;
+                    img{
+                        max-width:220px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media(max-width:550px){
+    #main{
+         .logo{
+            .conteiner{
+                img{
+                    left:10%;
+                }
+            }
+            .frase{
+                p{
+                    left:20px;
+                }
+            }
+        }
+        .imagens{
+            #carrocel{
+                // gap:10px;
+                padding:0 30px;
+                .imagem{
+                    width:10%;
+                    img{
+                        max-width:160px;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+//geral
+#main{
+    .logo{
+        background-color:rgb(255, 184, 184);
+        width:100%;
+        height:300px;
+        overflow: none;
+        display:flex;
+        overflow: hidden;
+        .conteiner{
+            // background-color: red;
+            width:50%;
+            img{
+                position:relative;
+                top:100%;
+                width:200px;
+                animation-name: guaxinim;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+        .frase{
+            width:50%;
+            // background-color: aqua;
+            display: flex;
+            align-items: center;
+            p{
+                position: relative;
+                opacity:0;
+                animation-name: frase;
+                animation-duration: 2.4s;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+    .descricao{
+        margin:40px 0;
+        div{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                text-align: center;
+            }
+            button{
+                margin-top:15px;
+                padding:15px 50px;
+                border-radius:49px;
+            }
+        }
+    }
+    .imagens{
+        overflow: hidden;
+        height:250px;
+        max-width:100%;
+        margin:10px 0;
+        // background-color:$verde;
+        position: relative;
+        .seta2, .seta1{
+            position: absolute;
+            top:5%;
+            height:90%;
+            z-index: 1;
+            img{
+                transition-duration: 0.1s;
+                position:relative;
+                top:32%;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .seta1{
+            left:10px;
+            img{
+                &:active{
+                    padding-left:10px;
+                }
+            }
+        }
+        .seta2{
+            right:10px;
+            img{
+                &:active{
+                    padding-right:10px;
+                }
+            }
+        }
+        .carrocel{
+            width:332%;
+            height:90%;
+            // background-color: $azul;
+            display:flex;
+            align-items: center;
+            position: relative;
+            top:5%;
+            transition-duration: 0.8s;
+            .imagem{
+                display:flex;
+                justify-content: center;
+            }
+        }
+    }
+    .links{
+        border:1px solid red;
+        padding:40px 0;
+        .flex{
+            display: flex;
+            justify-content: space-evenly;
+            .link{
+                height:400px;
+                width:25%;
+                min-width:240px;
+                border:1px solid black;
+                border-radius:20px;
+                padding:15px;
+                .divisoria{
+                    background-color: blue;
+                    height:100%;
+                    .msg{
+                        height:90px;
+                        h1{
+                            font-size: 1.5em;
+                            text-align: center;
+                            padding:25px;
+                            margin:0px 10px 0 0;
+                            a{
+                                color:white !important;
+                            }
+                        }
+                        &:hover{
+                            h1{
+                                a{
+                                    font-size: 1.1em;
+                                    &:hover{
+                                        opacity:0.8;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .img{
+                        height:278px;
+                        background-color: green;
+                        display:flex;
+                        justify-content: center;
+                        img{
+                            height:100%;
+                            transition-duration: 0.5s;
+                        }
+                        &:hover{
+                            img{
+                                height:105%;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    .divisoria{
+                        .msg{
+                            h1{
+                                text-align: end;
+                                width:100px;
+                                padding:10px;
+                                float: right;
+                            }
+                        }
+                        .img{
+                            justify-content: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//animação
+.setaSumir{
+     opacity:0;
+     img{
+         &:hover{
+            cursor: default !important;
+        }
+     }
+}
+.frase-ativa{
+    animation-name: frase;
+    animation-duration: 2.4s;
+    animation-fill-mode: forwards;
+}
+.img-ativo{
+    animation-name: guaxinim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes guaxinim{
+    from{
+        top:100%px;
+    }
+    to{
+        top:30px;
+
+    }
+}
+@keyframes frase{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}

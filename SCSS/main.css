@@ -1,0 +1,509 @@
+@media (min-width: 1000px) {
+  #header {
+    background-color: red;
+  }
+  #header #div-cabecalho header {
+    padding: 0 50px;
+  }
+  #header #div-cabecalho header .img-logo a img {
+    width: 150px;
+  }
+  #header #div-cabecalho header .nav-pills {
+    gap: 20px;
+  }
+  #header #div-cabecalho header .nav-pills .nav-lista {
+    padding: 0;
+  }
+  #header #div-cabecalho header .nav-pills .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #header #div-cabecalho header #botao {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  #header #div-cabecalho {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+  }
+  #header #div-cabecalho header {
+    align-items: center;
+  }
+  #header #div-cabecalho header .img-logo {
+    width: 140px;
+    height: 100px;
+    margin-left: 20px;
+  }
+  #header #div-cabecalho header .img-logo a img {
+    width: 100%;
+  }
+  #header #div-cabecalho header .nav-pills {
+    z-index: -9;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    transition-duration: 0.2s;
+    top: -40px;
+  }
+  #header #div-cabecalho header .nav-pills buttom {
+    padding: 0;
+  }
+  #header #div-cabecalho header #botao {
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    right: 0;
+  }
+  #header #div-cabecalho header #botao:hover {
+    cursor: pointer;
+  }
+  #header #div-cabecalho header #botao .menu-burger {
+    background-color: #414f64;
+    display: block;
+    height: 10px;
+    border-radius: 10px;
+    width: 30px;
+    transition-duration: 0.1s;
+  }
+  #alvo .nav-lista {
+    width: 100%;
+    border: 1px solid rgb(28, 255, 255);
+  }
+  #alvo .nav-lista button {
+    padding-left: 16px;
+    padding-right: 100%;
+    border: none;
+  }
+  #alvo .nav-lista .cor:hover {
+    color: white;
+    background-color: #3b53a3;
+  }
+  #alvo .nav-lista .cor:hover font {
+    color: white;
+  }
+  #alvo .nav-lista .dropdown {
+    padding: 0;
+  }
+  #alvo .nav-lista .dropdown #botao-lista-links {
+    padding-left: 20px;
+  }
+}
+#header {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+#header #cabecalho {
+  height: 98px;
+  background-color: blue;
+}
+#header #cabecalho #logo-header {
+  transition-duration: 0.8s;
+}
+#header #cabecalho #logo-header:hover {
+  width: 160px !important;
+}
+
+.aparecer {
+  top: 110px !important;
+  background-color: white;
+}
+
+.mbc {
+  position: relative;
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.mbb {
+  position: relative;
+  bottom: 11px;
+  transform: rotate(-45deg);
+}
+
+.abm {
+  opacity: 0;
+}
+
+#footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b53a3;
+}
+#footer p {
+  margin: 0px;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  #main footer {
+    height: 70px;
+    padding: 0 100px;
+  }
+  #main footer div a {
+    width: 40px;
+    transition-duration: 0.8s;
+  }
+  #main footer div a:hover {
+    width: 50px;
+  }
+}
+@media (max-width: 999px) {
+  #main footer {
+    height: 70px;
+  }
+  #main footer div p {
+    font-size: 1.2em;
+  }
+  #main footer div a img {
+    width: 30px;
+  }
+  #main footer div a img:hover {
+    width: 40px;
+  }
+}
+@media (max-width: 770px) {
+  #main footer {
+    flex-direction: column;
+    height: 170px;
+    padding: 20px 0;
+    gap: 15px;
+  }
+  #main footer div a img:hover {
+    width: 35px;
+  }
+}
+#main {
+  margin-top: 98px;
+}
+#main footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3E3ABA;
+}
+#main footer * {
+  color: white;
+}
+#main footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#main footer div p {
+  font-size: 1.5em;
+  margin: 0;
+}
+#main footer div a {
+  max-width: 30px !important;
+  height: 30px;
+}
+#main footer div a img {
+  width: 30px;
+  transition-duration: 0.8s;
+}
+#main footer div a img:hover {
+  width: 37px;
+  opacity: 0.7;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 920px) {
+  #main .links .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #main .links .flex .link {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  #main .links .flex .link .divisoria .msg h1 {
+    font-size: 2.3em !important;
+  }
+  #main .links .flex .link:nth-child(1) .divisoria .msg h1 {
+    width: 100% !important;
+  }
+}
+@media (min-width: 801px) {
+  #main .logo .conteiner img {
+    left: 50%;
+  }
+  #main .logo .frase p {
+    left: 10px;
+  }
+  #main .descricao div p {
+    width: 50%;
+  }
+  #main .imagens #carrocel {
+    justify-content: space-between;
+    gap: 0%;
+    padding: 0 !important;
+  }
+  #main .imagens #carrocel .imagem {
+    width: 10%;
+  }
+  #main .imagens #carrocel .imagem img {
+    max-width: 220px;
+  }
+}
+@media (max-width: 800px) {
+  #main .logo .conteiner img {
+    left: 25%;
+  }
+  #main .logo .frase p {
+    left: 10px;
+  }
+  #main .imagens #carrocel {
+    gap: 3%;
+    padding: 0 6%;
+  }
+  #main .imagens #carrocel .imagem {
+    width: 10%;
+  }
+  #main .imagens #carrocel .imagem img {
+    max-width: 220px;
+  }
+}
+@media (max-width: 550px) {
+  #main .logo .conteiner img {
+    left: 10%;
+  }
+  #main .logo .frase p {
+    left: 20px;
+  }
+  #main .imagens #carrocel {
+    padding: 0 30px;
+  }
+  #main .imagens #carrocel .imagem {
+    width: 10%;
+  }
+  #main .imagens #carrocel .imagem img {
+    max-width: 160px;
+  }
+}
+#main .logo {
+  background-color: rgb(255, 184, 184);
+  width: 100%;
+  height: 300px;
+  overflow: none;
+  display: flex;
+  overflow: hidden;
+}
+#main .logo .conteiner {
+  width: 50%;
+}
+#main .logo .conteiner img {
+  position: relative;
+  top: 100%;
+  width: 200px;
+  animation-name: guaxinim;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+#main .logo .frase {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+#main .logo .frase p {
+  position: relative;
+  opacity: 0;
+  animation-name: frase;
+  animation-duration: 2.4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+#main .descricao {
+  margin: 40px 0;
+}
+#main .descricao div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main .descricao div p {
+  text-align: center;
+}
+#main .descricao div button {
+  margin-top: 15px;
+  padding: 15px 50px;
+  border-radius: 49px;
+}
+#main .imagens {
+  overflow: hidden;
+  height: 250px;
+  max-width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+#main .imagens .seta2, #main .imagens .seta1 {
+  position: absolute;
+  top: 5%;
+  height: 90%;
+  z-index: 1;
+}
+#main .imagens .seta2 img, #main .imagens .seta1 img {
+  transition-duration: 0.1s;
+  position: relative;
+  top: 32%;
+}
+#main .imagens .seta2 img:hover, #main .imagens .seta1 img:hover {
+  cursor: pointer;
+}
+#main .imagens .seta1 {
+  left: 10px;
+}
+#main .imagens .seta1 img:active {
+  padding-left: 10px;
+}
+#main .imagens .seta2 {
+  right: 10px;
+}
+#main .imagens .seta2 img:active {
+  padding-right: 10px;
+}
+#main .imagens .carrocel {
+  width: 332%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 5%;
+  transition-duration: 0.8s;
+}
+#main .imagens .carrocel .imagem {
+  display: flex;
+  justify-content: center;
+}
+#main .links {
+  border: 1px solid red;
+  padding: 40px 0;
+}
+#main .links .flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+#main .links .flex .link {
+  height: 400px;
+  width: 25%;
+  min-width: 240px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 15px;
+}
+#main .links .flex .link .divisoria {
+  background-color: blue;
+  height: 100%;
+}
+#main .links .flex .link .divisoria .msg {
+  height: 90px;
+}
+#main .links .flex .link .divisoria .msg h1 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 25px;
+  margin: 0px 10px 0 0;
+}
+#main .links .flex .link .divisoria .msg h1 a {
+  color: white !important;
+}
+#main .links .flex .link .divisoria .msg:hover h1 a {
+  font-size: 1.1em;
+}
+#main .links .flex .link .divisoria .msg:hover h1 a:hover {
+  opacity: 0.8;
+}
+#main .links .flex .link .divisoria .img {
+  height: 278px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+#main .links .flex .link .divisoria .img img {
+  height: 100%;
+  transition-duration: 0.5s;
+}
+#main .links .flex .link .divisoria .img:hover img {
+  height: 105%;
+}
+#main .links .flex .link:nth-child(1) .divisoria .msg h1 {
+  text-align: end;
+  width: 100px;
+  padding: 10px;
+  float: right;
+}
+#main .links .flex .link:nth-child(1) .divisoria .img {
+  justify-content: start;
+}
+
+.setaSumir {
+  opacity: 0;
+}
+.setaSumir img:hover {
+  cursor: default !important;
+}
+
+.frase-ativa {
+  animation-name: frase;
+  animation-duration: 2.4s;
+  animation-fill-mode: forwards;
+}
+
+.img-ativo {
+  animation-name: guaxinim;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes guaxinim {
+  from {
+    top: 100% px;
+  }
+  to {
+    top: 30px;
+  }
+}
+@keyframes frase {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: "blabla";
+  src: url("../Fonte/Omnes_Pro_Bold.otf");
+}
+* {
+  font-family: "blabla";
+  color: #414f64;
+}
+
+a {
+  text-decoration: none !important;
+  transition-duration: 0.5s;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+@import "../geral/main.scss",  "PaginaPrincipal/main";
+
+@font-face {
+    font-family: 'blabla';
+    src: url('../Fonte/Omnes_Pro_Bold.otf');
+}
+*{
+    font-family: 'blabla';
+    color:$cinza;
+}
+a{
+    text-decoration: none !important;
+    transition-duration: 0.5s;
+}

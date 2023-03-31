@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SCSS/main.css">
+    <link rel="shortcut icon" href="img/blabla/Guaxinim.ico" type="image/x-icon">
+
+    <!-- css e js boot -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>BlaBlakidsStore</title>
+</head>
+<body>
+  <header id="header">
+    <div id="div-cabecalho">
+      <header id="cabecalho" class="d-flex flex-wrap justify-content-between py-3">
+        <div class="img-logo">
+          <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
+            <img src="img/blabla/BLA BLA KIDS - LOGO 2 - Copia.png" alt="Logo-Loja-BlaBlaKidsstore" id="logo-header">
+          </a>
+        </div>
+        <div id="botao" class="container-menu-burger" onclick="trocar()" onclick="mudarBotao()"  >
+            <div class="menu-burger" id="bc"></div>
+            <div class="menu-burger" id="bm"></div>
+            <div class="menu-burger" id="bb"></div>
+        </div>
+        <ul class="nav nav-pills n_aparecer" id="alvo">
+          <div class="nav-lista">
+              <li class="nav-item"><a href="#" class="nav-link cor">
+                  <font style="vertical-align: inherit;">Sobre nós</font></a>
+              </li>
+          </div>
+          <div class="nav-lista">
+            <div class="dropdown">
+                <button id="botao-lista-links" class="btn dropdown-toggle cor" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                </button>
+                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+                  <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                  <li><a class="dropdown-item" href="#">Laços</a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="nav-lista">
+              <li class="nav-item "><a href="#" class="nav-link cor"><font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Contato</font></font></a>
+              </li>
+          </div>
+        </ul>
+      </header>
+    </div>
+  </header>
+  <main id="main">
+    <div class="logo">
+      <div class="conteiner">
+        <img src="img/blabla/Guaxinim.png" alt="Guaxinim-BlaBlaKidsstore">
+      </div>
+      <div class="frase">
+        <p>LOOKINHOS PARA TODOS</p>
+      </div>
+    </div>
+    <div class="descricao">
+      <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor expedita cupiditate ipsam tempora modi harum voluptatem, error quod similique consectetur voluptatibus velit et impedit? Laudantium facilis numquam magnam illo dicta.</p>
+        <button type="button" class="btn btn-outline-secondary">Saiba mais sobre nós</button>
+      </div>
+    </div>
+    <div class="imagens">
+      <div class="seta1" id="seta1">
+        <img src="img/formas/icons8-seta-longa-à-esquerda-48.png" alt="" onclick="moverCarrocel(1)">
+      </div>
+      <div class="seta2" id="seta2">
+        <img src="img/formas/icons8-seta-longa-à-direita-48.png" alt="" onclick="moverCarrocel(0)">
+      </div>
+      <div class="carrocel" id="carrocel" style=" right:0;">
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+        <div class="imagem"><img src="img/roupas/panda.webp" alt=""></div>
+      </div>
+    </div>
+    <div class="links">
+      <div class="flex">
+        <div class="link">
+          <div class="divisoria">
+            <div class="msg">
+              <h1><a href="">QUEM SOMOS</a></h1>
+            </div>
+            <div class="img">
+              <a href=""><img src="img/blabla/Guaxinim.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="link">
+          <div class="divisoria">
+            <div class="img"><a href="">
+              <img src="img/blabla/Guaxinim.png" alt=""></a>
+            </div>
+            <div class="msg">
+              <h1><a href="">PRODUTOS</a></h1>
+            </div>
+          </div>
+        </div>
+        <div class="link">
+          <div class="divisoria">
+            <div class="msg">
+              <h1><a href="">CONTATO</a></h1>
+            </div>
+            <div class="img">
+              <a href=""><img src="img/blabla/Guaxinim.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>ola</div>
+      <div>
+        <a href="https://web.whatsapp.com/send?phone=5511993665995" target="_blank">
+          <img src="img/links/icons8-whatsapp-50 (1).png" alt="">
+        </a>
+        <p>(11)99366-5995</p>
+      </div>
+      <div>
+        <a href="">
+          <img src="img/links/icons8-instagram-50 (1).png" alt="">
+        </a>
+        <a href="">
+          <img src="img/links/icons8-facebook-novo-50 (1).png" alt="">
+        </a>
+      </div>
+    </footer>
+  </main>
+  <footer id="footer">
+    <p>direitos autorais Lucas Barros</p>
+  </footer>
+</body>
+<script src="pagina.js"></script>
+</html>
