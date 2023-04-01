@@ -1,1 +1,9 @@
-@import "../geral/main.scss";
+@import "../../geral/main.scss";
+
+@font-face {
+    font-family: 'blabla';
+    src: url('../../Fonte/Omnes_Pro_Bold.otf');
+}
+*{
+    font-family: 'blabla';
+}

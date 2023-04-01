@@ -5,7 +5,7 @@ var barra2 = document.getElementById('bm');
 var barra3 = document.getElementById('bb');
 var carrocel = document.getElementById('carrocel');
 var seta1 = document.getElementById('seta1');
-seta1.classList.add('setaSumir');
+// seta1.classList.add('setaSumir');
 var seta2 = document.getElementById('seta2');
 var wats_ani = document.getElementById('wats_ani')
 var contador = 0; 

@@ -1,0 +1,44 @@
+.wats{
+    position:fixed;
+    top:70%;
+    right:10px;
+    width:52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.6s;
+    background-color: white;
+    border-radius:25px;
+    // padding:2px;
+    z-index: 9999;
+    div{
+        img{
+            transition-duration: 0.6s;
+            width:100%;
+        }
+    }
+    &:hover{
+        width:59px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+}
+.img-animacao{
+    animation-name: wats;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-delay: 4s;
+    animation-timing-function: linear;
+    transition-duration: 0.6s;
+}
+@keyframes wats{
+    20%{transform: rotate(0turn);}
+    40%{transform: Rotate(1turn);}
+    45%{
+        transform: Rotate(1turn);
+        width:52px;
+    }
+    60%{width:67px;}
+    75%{width: 52px;}
+    100%{transform: Rotate(1turn);}
+}

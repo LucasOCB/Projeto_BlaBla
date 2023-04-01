@@ -114,6 +114,9 @@
 #header #cabecalho #logo-header:hover {
   width: 160px !important;
 }
+#header #cabecalho .nav-pills a * {
+  color: #414f64 !important;
+}
 
 .aparecer {
   top: 110px !important;
@@ -222,7 +225,66 @@
   opacity: 0.7;
 }
 
+.wats {
+  position: fixed;
+  top: 70%;
+  right: 10px;
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.6s;
+  background-color: white;
+  border-radius: 25px;
+  z-index: 9999;
+}
+.wats div img {
+  transition-duration: 0.6s;
+  width: 100%;
+}
+.wats:hover {
+  width: 59px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.img-animacao {
+  animation-name: wats;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 4s;
+  animation-timing-function: linear;
+  transition-duration: 0.6s;
+}
+
+@keyframes wats {
+  20% {
+    transform: rotate(0turn);
+  }
+  40% {
+    transform: Rotate(1turn);
+  }
+  45% {
+    transform: Rotate(1turn);
+    width: 52px;
+  }
+  60% {
+    width: 67px;
+  }
+  75% {
+    width: 52px;
+  }
+  100% {
+    transform: Rotate(1turn);
+  }
+}
+@font-face {
+  font-family: "blabla";
+  src: url("../Fonte/Omnes_Pro_Bold.otf");
+}
 * {
+  font-family: "blabla";
+  color: #414f64;
   margin: 0px;
   padding: 0px;
 }

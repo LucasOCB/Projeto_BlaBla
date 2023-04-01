@@ -1,1 +1,288 @@
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 1000px) {
+  #header {
+    background-color: red;
+  }
+  #header #div-cabecalho header {
+    padding: 0 50px;
+  }
+  #header #div-cabecalho header .img-logo a img {
+    width: 150px;
+  }
+  #header #div-cabecalho header .nav-pills {
+    gap: 20px;
+  }
+  #header #div-cabecalho header .nav-pills .nav-lista {
+    padding: 0;
+  }
+  #header #div-cabecalho header .nav-pills .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #header #div-cabecalho header #botao {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  #header #div-cabecalho {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+  }
+  #header #div-cabecalho header {
+    align-items: center;
+  }
+  #header #div-cabecalho header .img-logo {
+    width: 140px;
+    height: 100px;
+    margin-left: 20px;
+  }
+  #header #div-cabecalho header .img-logo a img {
+    width: 100%;
+  }
+  #header #div-cabecalho header .nav-pills {
+    z-index: -9;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    transition-duration: 0.2s;
+    top: -40px;
+  }
+  #header #div-cabecalho header .nav-pills buttom {
+    padding: 0;
+  }
+  #header #div-cabecalho header #botao {
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    right: 0;
+  }
+  #header #div-cabecalho header #botao:hover {
+    cursor: pointer;
+  }
+  #header #div-cabecalho header #botao .menu-burger {
+    background-color: #414f64;
+    display: block;
+    height: 10px;
+    border-radius: 10px;
+    width: 30px;
+    transition-duration: 0.1s;
+  }
+  #alvo .nav-lista {
+    width: 100%;
+    border: 1px solid rgb(28, 255, 255);
+  }
+  #alvo .nav-lista button {
+    padding-left: 16px;
+    padding-right: 100%;
+    border: none;
+  }
+  #alvo .nav-lista .cor:hover {
+    color: white;
+    background-color: #3b53a3;
+  }
+  #alvo .nav-lista .cor:hover font {
+    color: white;
+  }
+  #alvo .nav-lista .dropdown {
+    padding: 0;
+  }
+  #alvo .nav-lista .dropdown #botao-lista-links {
+    padding-left: 20px;
+  }
+}
+#header {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+#header #cabecalho {
+  height: 98px;
+  background-color: blue;
+}
+#header #cabecalho #logo-header {
+  transition-duration: 0.8s;
+}
+#header #cabecalho #logo-header:hover {
+  width: 160px !important;
+}
+#header #cabecalho .nav-pills a * {
+  color: #414f64 !important;
+}
+
+.aparecer {
+  top: 110px !important;
+  background-color: white;
+}
+
+.mbc {
+  position: relative;
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.mbb {
+  position: relative;
+  bottom: 11px;
+  transform: rotate(-45deg);
+}
+
+.abm {
+  opacity: 0;
+}
+
+#footer {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b53a3;
+}
+#footer p {
+  margin: 0px;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  #main footer {
+    height: 70px;
+    padding: 0 100px;
+  }
+  #main footer div a {
+    width: 40px;
+    transition-duration: 0.8s;
+  }
+  #main footer div a:hover {
+    width: 50px;
+  }
+}
+@media (max-width: 999px) {
+  #main footer {
+    height: 70px;
+  }
+  #main footer div p {
+    font-size: 1.2em;
+  }
+  #main footer div a img {
+    width: 30px;
+  }
+  #main footer div a img:hover {
+    width: 40px;
+  }
+}
+@media (max-width: 770px) {
+  #main footer {
+    flex-direction: column;
+    height: 170px;
+    padding: 20px 0;
+    gap: 15px;
+  }
+  #main footer div a img:hover {
+    width: 35px;
+  }
+}
+#main {
+  margin-top: 98px;
+}
+#main footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3E3ABA;
+}
+#main footer * {
+  color: white;
+}
+#main footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#main footer div p {
+  font-size: 1.5em;
+  margin: 0;
+}
+#main footer div a {
+  max-width: 30px !important;
+  height: 30px;
+}
+#main footer div a img {
+  width: 30px;
+  transition-duration: 0.8s;
+}
+#main footer div a img:hover {
+  width: 37px;
+  opacity: 0.7;
+}
+
+.wats {
+  position: fixed;
+  top: 70%;
+  right: 10px;
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.6s;
+  background-color: white;
+  border-radius: 25px;
+  z-index: 9999;
+}
+.wats div img {
+  transition-duration: 0.6s;
+  width: 100%;
+}
+.wats:hover {
+  width: 59px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.img-animacao {
+  animation-name: wats;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 4s;
+  animation-timing-function: linear;
+  transition-duration: 0.6s;
+}
+
+@keyframes wats {
+  20% {
+    transform: rotate(0turn);
+  }
+  40% {
+    transform: Rotate(1turn);
+  }
+  45% {
+    transform: Rotate(1turn);
+    width: 52px;
+  }
+  60% {
+    width: 67px;
+  }
+  75% {
+    width: 52px;
+  }
+  100% {
+    transform: Rotate(1turn);
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */
