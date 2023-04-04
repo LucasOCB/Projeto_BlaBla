@@ -2,7 +2,7 @@
     #header{
         background-color:red;
         #div-cabecalho{
-            header{
+            main{
                 padding:0 50px;
                 .img-logo{
                     a{
@@ -35,7 +35,7 @@
             width:100%;
             background-color: white;
             align-items: center;
-            header{
+            main{
                 align-items: center;
                 .img-logo{
                     width:140px;
@@ -112,7 +112,17 @@
         }
     }
 }
-
+@media(max-width:500px){
+    #header{
+        #div-cabecalho{
+            main{
+                #botao{
+                    margin-right:30px;
+                }
+            }
+        }
+    }
+}
 //geral
 #header{
     z-index: 5;

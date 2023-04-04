@@ -2,23 +2,23 @@
   #header {
     background-color: red;
   }
-  #header #div-cabecalho header {
+  #header #div-cabecalho main {
     padding: 0 50px;
   }
-  #header #div-cabecalho header .img-logo a img {
+  #header #div-cabecalho main .img-logo a img {
     width: 150px;
   }
-  #header #div-cabecalho header .nav-pills {
+  #header #div-cabecalho main .nav-pills {
     gap: 20px;
   }
-  #header #div-cabecalho header .nav-pills .nav-lista {
+  #header #div-cabecalho main .nav-pills .nav-lista {
     padding: 0;
   }
-  #header #div-cabecalho header .nav-pills .nav-link {
+  #header #div-cabecalho main .nav-pills .nav-link {
     padding-left: 0;
     padding-right: 0;
   }
-  #header #div-cabecalho header #botao {
+  #header #div-cabecalho main #botao {
     display: none;
   }
 }
@@ -28,18 +28,18 @@
     background-color: white;
     align-items: center;
   }
-  #header #div-cabecalho header {
+  #header #div-cabecalho main {
     align-items: center;
   }
-  #header #div-cabecalho header .img-logo {
+  #header #div-cabecalho main .img-logo {
     width: 140px;
     height: 100px;
     margin-left: 20px;
   }
-  #header #div-cabecalho header .img-logo a img {
+  #header #div-cabecalho main .img-logo a img {
     width: 100%;
   }
-  #header #div-cabecalho header .nav-pills {
+  #header #div-cabecalho main .nav-pills {
     z-index: -9;
     width: 100%;
     position: absolute;
@@ -49,10 +49,10 @@
     transition-duration: 0.2s;
     top: -40px;
   }
-  #header #div-cabecalho header .nav-pills buttom {
+  #header #div-cabecalho main .nav-pills buttom {
     padding: 0;
   }
-  #header #div-cabecalho header #botao {
+  #header #div-cabecalho main #botao {
     height: 25px;
     display: flex;
     flex-direction: column;
@@ -64,10 +64,10 @@
     margin-right: 60px;
     right: 0;
   }
-  #header #div-cabecalho header #botao:hover {
+  #header #div-cabecalho main #botao:hover {
     cursor: pointer;
   }
-  #header #div-cabecalho header #botao .menu-burger {
+  #header #div-cabecalho main #botao .menu-burger {
     background-color: #414f64;
     display: block;
     height: 10px;
@@ -96,6 +96,11 @@
   }
   #alvo .nav-lista .dropdown #botao-lista-links {
     padding-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  #header #div-cabecalho main #botao {
+    margin-right: 30px;
   }
 }
 #header {
@@ -227,7 +232,7 @@
 
 .wats {
   position: fixed;
-  top: 70%;
+  top: 85%;
   right: 10px;
   width: 52px;
   display: flex;
@@ -241,11 +246,6 @@
 .wats div img {
   transition-duration: 0.6s;
   width: 100%;
-}
-.wats:hover {
-  width: 59px;
-  border-radius: 30px;
-  cursor: pointer;
 }
 
 .img-animacao {
@@ -270,6 +270,7 @@
   }
   60% {
     width: 67px;
+    border-radius: 40px;
   }
   75% {
     width: 52px;

@@ -3,36 +3,21 @@ var validar = false;
 var barra1 = document.getElementById('bc');
 var barra2 = document.getElementById('bm');
 var barra3 = document.getElementById('bb');
-var carrocel = document.getElementById('carrocel');
-var seta1 = document.getElementById('seta1');
-// seta1.classList.add('setaSumir');
-var seta2 = document.getElementById('seta2');
-var wats_ani = document.getElementById('wats_ani')
+var wats_ani = document.getElementById('wats_ani');
+var botoes = document.getElementById('botoes');
+var body = document.getElementById('body');
+var imagens_produtos = document.getElementById('imagens_produtos');
+var descricao = document.getElementById('descricao');
+const imagens = document.getElementsByClassName('img_img');
 var contador = 0; 
-var mover_tamanho = 0;
+const imgs_1_conjuntos = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+const imgs_2_acessorios = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+const imgs_3_vestidos = ["a", "1", "b", "2", "c", "3", "e", "4", "f", "5"]
+const imgs_4_calcas = ["a", "a", "s", "s", "x", "x", "z", "z", "z"]
+const imgs_5_bodys = ["q", "q", "q", "q", "q", "q", "q", "q", "q"]
+const imgs_6_jardineiras = ["b", "b", "b", "b", "b", "b", "b", "b", "b"]
 
-function moverCarrocel(dado){
-    if(dado == 0){
-        seta1.classList.remove('setaSumir');
-        mover_tamanho += 80
-        if(mover_tamanho >= 232){
-            mover_tamanho  = 232
-            seta2.classList.add('setaSumir');
-        }
-    }else if(dado == 1){
-        seta2.classList.remove('setaSumir');
-        mover_tamanho -= 80
-        if(mover_tamanho <= 0){
-            mover_tamanho = 0
-            seta1.classList.add('setaSumir');
-        }
-    }
-    if(dado == 0 && mover_tamanho <= 400){
-        carrocel.style.right = "" + mover_tamanho + "%";
-    }else if(dado == 1 && mover_tamanho >= 0){
-        carrocel.style.right = mover_tamanho + "%";
-    }
-}
+const tipos_imagens = [imgs_1_conjuntos, imgs_2_acessorios, imgs_3_vestidos, imgs_4_calcas, imgs_5_bodys, imgs_6_jardineiras]
 
 function mudarBotao(){
     if(contador%2 == 1){
@@ -64,5 +49,30 @@ function mudar(dado){
         delay_wats();
     }else if(dado == false){
         lista_nav.classList.remove('aparecer');
+    }
+}
+window.addEventListener("scroll", () => {
+    let posicao_Objeto = descricao.getBoundingClientRect();
+    let posicao_janela = {
+        superior: 0,
+        esquerda: 0,
+        inferior: window.innerHeight,
+        direita: window.innerWidth
+    }
+    fixar_botoes(posicao_Objeto.bottom)
+})
+function fixar_botoes(dado1){
+    if(dado1 < 97.5){
+        botoes.classList.add('fixar_botoes');
+        imagens_produtos.classList.add('padding_pos_fixo')
+    }else{
+        botoes.classList.remove('fixar_botoes');
+        imagens_produtos.classList.remove('padding_pos_fixo')
+    }
+}
+function mudar_imagens(numero){
+    for(let contador = 0; contador < imagens.length; contador++){
+        imagens[contador].setAttribute("src", tipos_imagens[numero][contador])
+        // console.log(tipos_imagens[numero][contador])
     }
 }

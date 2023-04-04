@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" href="../img/blabla/Guaxinim.ico" type="image/x-icon">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
+<body id="body">
     <header id="header">
         <div id="div-cabecalho">
-          <header id="cabecalho" class="d-flex flex-wrap justify-content-between py-3">
+          <main id="cabecalho" class="d-flex flex-wrap justify-content-between py-3">
             <div class="img-logo">
-              <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
+              <a href="../pagina.html" class="d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
                 <img src="../img/blabla/BLA BLA KIDS - LOGO 2 - Copia.png" alt="Logo-Loja-BlaBlaKidsstore" id="logo-header">
               </a>
             </div>
@@ -48,35 +49,98 @@
                   </li>
               </div>
             </ul>
-          </header>
+          </main>
         </div>
     </header>
     <main id="main">
-        <footer>
-            <div>ola</div>
-            <div>
-              <a href="https://web.whatsapp.com/send?phone=5511993665995" target="_blank">
-                <img src="../img/links/icons8-whatsapp-50 (1).png" alt="">
-              </a>
-              <p>(11)99366-5995</p>
+      <header>
+        <h1>Produtos</h1>
+        <img src="../img/blabla/Guaxinim.png" alt="">
+      </header>
+      <div class="descricao" id="descricao">
+        <div class="texto">
+          <h1>Conheça um pouco sobre nossos produtos</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum voluptas rem impedit aliquam reiciendis blanditiis corrupti, esse velit ullam tenetur ipsa quod quam perferendis sed itaque eveniet iure? Quis, ducimus.
+          </p>
+          <p class="p">Confira abaixo:</p>
+        </div>
+        <div class="imagem">
+          <img src="../img/blabla/Guaxinim.png" alt="">
+        </div>
+      </div>
+      <div class="botoes" id="botoes">
+        <button type="button" class="btn btn-outline-primary" onclick="mudar_imagens(0)">CONJUNTOS</button>
+        <button type="button" class="btn btn-outline-primary" onclick="mudar_imagens(1)">ACESSORIOS</button>
+        <button type="button" class="btn btn-outline-primary" onclick="mudar_imagens(2)">VESTIDOS</button>
+        <button type="button" class="btn btn-outline-primary" onclick="mudar_imagens(3)">CALÇAS</button>
+        <button type="button" class="btn btn-outline-primary" onclick="mudar_imagens(4)">BODYS</button>
+        <button type="button" class="btn btn-outline-primary" onclick="mudar_imagens(5)">JARDINEIRAS</button>
+      </div>
+      <div class="imagens_produtos" id="imagens_produtos">
+        <div class="container_grid">
+          <div class="container_1">
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
             </div>
-            <div>
-              <a href="">
-                <img src="../img/links/icons8-instagram-50 (1).png" alt="">
-              </a>
-              <a href="">
-                <img src="../img/links/icons8-facebook-novo-50 (1).png" alt="">
-              </a>
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
             </div>
-        </footer>
-        <div class="wats img-animacao" id="wats_ani">
-        <div class="">
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
+            </div>
+          </div>
+          <div class="container_2">
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
+            </div>
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
+            </div>
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
+            </div>
+          </div>
+          <div class="container_3">
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
+            </div>
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
+            </div>
+            <div class="img">
+              <img src="../img/blabla/Guaxinim.png" alt="" class="img_img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+          <div>ola</div>
+          <div>
             <a href="https://web.whatsapp.com/send?phone=5511993665995" target="_blank">
-            <img src="../img/links/icons8-whatsapp-colors.png" alt="" class="">
+              <img src="../img/links/icons8-whatsapp-50 (1).png" alt="">
             </a>
-        </div>
-        </div>
+            <p>(11)99366-5995</p>
+          </div>
+          <div>
+            <a href="">
+              <img src="../img/links/icons8-instagram-50 (1).png" alt="">
+            </a>
+            <a href="">
+              <img src="../img/links/icons8-facebook-novo-50 (1).png" alt="">
+            </a>
+          </div>
+      </footer>
+      <div class="wats img-animacao" id="wats_ani">
+      <div class="">
+          <a href="https://web.whatsapp.com/send?phone=5511993665995" target="_blank">
+          <img src="../img/links/icons8-whatsapp-colors.png" alt="" class="">
+          </a>
+      </div>
+      </div>
     </main>
+    <footer id="footer">
+      <p>direitos autorais Lucas Barros</p>
+    </footer>
     <script src="produtos.js"></script>
 </body>
 </html>
