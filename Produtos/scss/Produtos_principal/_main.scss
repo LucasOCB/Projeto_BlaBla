@@ -39,49 +39,54 @@
             .container_grid{
                 grid-template-columns: 1fr;
                 grid-template-rows: repat(3, 1fr);
-                gap:5px;
+                justify-content: center;
+                align-items:center;
+                padding:10px;
+                // gap:5px;
+                .container_1, .container_2, .container_3{
+                    justify-content: space-around;
+                }
                 .container_1{
                     display:grid;
-                    gap: 5px;
-                    grid-template-columns: 2fr 1fr 1fr;
+                    grid-template-columns: 400px 200px 200px;
                     .img{
                         &:nth-child(2), &:nth-child(3){
-                            width:200px;
-                            height:200px;
+                            max-width:200px;
+                            max-height:200px;
                         }
                         &:nth-child(1){
-                            width:400px;
-                            height:200px;
+                            max-width:400px;
+                            max-height:200px;
                         }
                     }
                 }
                 .container_2{
                     display:grid;
-                    gap: 5px;
-                    grid-template-columns: 1fr 2fr 1fr;
+                    // gap: 5px;
+                    grid-template-columns: 200px 400px 200px;
                     .img{
                         &:nth-child(1), &:nth-child(3){
-                            width:200px;
-                            height:200px;
+                            max-width:200px;
+                            max-height:200px;
                         }
                         &:nth-child(2){
-                            width:400px;
-                            height:200px;
+                            max-width:400px;
+                            max-height:200px;
                         }
                     }
                 }
                 .container_3{
                     display:grid;
-                    gap: 5px;
-                    grid-template-columns: 1fr 1fr 2fr;
+                    // gap: 5px;
+                    grid-template-columns: 200px 200px 400px;
                     .img{
                         &:nth-child(1), &:nth-child(2){
-                            width:200px;
-                            height:200px;
+                            max-width:200px;
+                            max-height:200px;
                         }
                         &:nth-child(3){
-                            width:400px;
-                            height:200px;
+                            max-width:400px;
+                            max-height:200px;
                         }
                     }
                 }
@@ -188,13 +193,13 @@
         background-color:green($color: #000000);
         .container_grid{
             background-color:blue;
-            width:800px;
+            width:80%;
             margin:0 auto;
             display:grid;
             .img{
                 background-color:black;
                 overflow: hidden;
-                width:100%;
+                // width:;
                 img{
                     width:100%;
                 }

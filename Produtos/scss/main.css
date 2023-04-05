@@ -307,46 +307,48 @@ li {
   #main .imagens_produtos .container_grid {
     grid-template-columns: 1fr;
     grid-template-rows: repat(3, 1fr);
-    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  #main .imagens_produtos .container_grid .container_1, #main .imagens_produtos .container_grid .container_2, #main .imagens_produtos .container_grid .container_3 {
+    justify-content: space-around;
   }
   #main .imagens_produtos .container_grid .container_1 {
     display: grid;
-    gap: 5px;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 400px 200px 200px;
   }
   #main .imagens_produtos .container_grid .container_1 .img:nth-child(2), #main .imagens_produtos .container_grid .container_1 .img:nth-child(3) {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
   }
   #main .imagens_produtos .container_grid .container_1 .img:nth-child(1) {
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
   }
   #main .imagens_produtos .container_grid .container_2 {
     display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 200px 400px 200px;
   }
   #main .imagens_produtos .container_grid .container_2 .img:nth-child(1), #main .imagens_produtos .container_grid .container_2 .img:nth-child(3) {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
   }
   #main .imagens_produtos .container_grid .container_2 .img:nth-child(2) {
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
   }
   #main .imagens_produtos .container_grid .container_3 {
     display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 200px 200px 400px;
   }
   #main .imagens_produtos .container_grid .container_3 .img:nth-child(1), #main .imagens_produtos .container_grid .container_3 .img:nth-child(2) {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
   }
   #main .imagens_produtos .container_grid .container_3 .img:nth-child(3) {
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
   }
   #main .container_grid {
     background-color: blue;
@@ -442,14 +444,13 @@ li {
 }
 #main .imagens_produtos .container_grid {
   background-color: blue;
-  width: 800px;
+  width: 80%;
   margin: 0 auto;
   display: grid;
 }
 #main .imagens_produtos .container_grid .img {
   background-color: black;
   overflow: hidden;
-  width: 100%;
 }
 #main .imagens_produtos .container_grid .img img {
   width: 100%;
