@@ -10,14 +10,107 @@ var imagens_produtos = document.getElementById('imagens_produtos');
 var descricao = document.getElementById('descricao');
 const imagens = document.getElementsByClassName('img_img');
 var contador = 0; 
-const imgs_1_conjuntos = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
-const imgs_2_acessorios = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-const imgs_3_vestidos = ["a", "1", "b", "2", "c", "3", "e", "4", "f", "5"]
-const imgs_4_calcas = ["a", "a", "s", "s", "x", "x", "z", "z", "z"]
-const imgs_5_bodys = ["q", "q", "q", "q", "q", "q", "q", "q", "q"]
-const imgs_6_jardineiras = ["b", "b", "b", "b", "b", "b", "b", "b", "b"]
+const imgs_1_camisetas = [
+    "../img/produtos/camisetas/cami1.jpeg",
+    "../img/produtos/camisetas/cami2.jpeg",
+    "../img/produtos/camisetas/cami3.jpeg",
+    "../img/produtos/camisetas/cami4.jpeg",
+    "../img/produtos/camisetas/cami5.jpeg",
+    "../img/produtos/camisetas/cami6.jpeg",
+    "../img/produtos/camisetas/cami7.jpeg",
+    "../img/produtos/camisetas/cami8.jpeg",
+    "../img/produtos/camisetas/cami9.jpeg"
+];
+const imgs_2_bermudas = [
+    "../img/produtos/bermudas/berm1.jpeg",
+    "../img/produtos/bermudas/berm2.jpeg",
+    "../img/produtos/bermudas/berm3.jpeg",
+    "../img/produtos/bermudas/berm4.jpeg",
+    "../img/produtos/bermudas/berm5.jpeg",
+    "../img/produtos/bermudas/berm6.jpeg",
+    "../img/produtos/bermudas/berm7.jpeg",
+    "../img/produtos/bermudas/berm8.jpeg",
+    "../img/produtos/bermudas/berm9.jpeg"
+];
+const imgs_3_conjuntos = [
+    "../img/produtos/conjuntos/conj1.jpeg",
+    "../img/produtos/conjuntos/conj2.jpeg",
+    "../img/produtos/conjuntos/conj3.jpeg",
+    "../img/produtos/conjuntos/conj4.jpeg",
+    "../img/produtos/conjuntos/conj5.jpeg",
+    "../img/produtos/conjuntos/conj6.jpeg",
+    "../img/produtos/conjuntos/conj7.jpeg",
+    "../img/produtos/conjuntos/conj8.jpeg",
+    "../img/produtos/conjuntos/conj9.jpeg"
+];
+const imgs_4_vestidos = [
+    "../img/produtos/vestidos/1",
+    "../img/produtos/vestidos/2",
+    "../img/produtos/vestidos/3",
+    "../img/produtos/vestidos/4",
+    "../img/produtos/vestidos/5",
+    "../img/produtos/vestidos/6",
+    "../img/produtos/vestidos/7",
+    "../img/produtos/vestidos/8",
+    "../img/produtos/vestidos/9"
+];
+const imgs_5_calcas = [
+    "../img/produtos/calcas/1",
+    "../img/produtos/calcas/2",
+    "../img/produtos/calcas/3",
+    "../img/produtos/calcas/4",
+    "../img/produtos/calcas/5",
+    "../img/produtos/calcas/6",
+    "../img/produtos/calcas/7",
+    "../img/produtos/calcas/8",
+    "../img/produtos/calcas/9"
+];
+const imgs_6_bodys = [
+    "../img/produtos/bodys/1",
+    "../img/produtos/bodys/2",
+    "../img/produtos/bodys/3",
+    "../img/produtos/bodys/4",
+    "../img/produtos/bodys/5",
+    "../img/produtos/bodys/6",
+    "../img/produtos/bodys/7",
+    "../img/produtos/bodys/8",
+    "../img/produtos/bodys/9"
+];
+const imgs_7_jardineiras = [
+    "../img/produtos/jardineiras/1",
+    "../img/produtos/jardineiras/2",
+    "../img/produtos/jardineiras/3",
+    "../img/produtos/jardineiras/4",
+    "../img/produtos/jardineiras/5",
+    "../img/produtos/jardineiras/6",
+    "../img/produtos/jardineiras/7",
+    "../img/produtos/jardineiras/8",
+    "../img/produtos/jardineiras/9"
+];
+const imgs_8_acessorios = [
+    "../img/produtos/acessorios/1",
+    "../img/produtos/acessorios/2",
+    "../img/produtos/acessorios/3",
+    "../img/produtos/acessorios/4",
+    "../img/produtos/acessorios/5",
+    "../img/produtos/acessorios/6",
+    "../img/produtos/acessorios/7",
+    "../img/produtos/acessorios/8",
+    "../img/produtos/acessorios/9"
+];
+const imgs_9_pijamas = [
+    "../img/produtos/pijamas/1",
+    "../img/produtos/pijamas/2",
+    "../img/produtos/pijamas/3",
+    "../img/produtos/pijamas/4",
+    "../img/produtos/pijamas/5",
+    "../img/produtos/pijamas/6",
+    "../img/produtos/pijamas/7",
+    "../img/produtos/pijamas/8",
+    "../img/produtos/pijamas/9"
+]
 
-const tipos_imagens = [imgs_1_conjuntos, imgs_2_acessorios, imgs_3_vestidos, imgs_4_calcas, imgs_5_bodys, imgs_6_jardineiras]
+const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bodys, imgs_7_jardineiras, imgs_8_acessorios, imgs_9_pijamas]
 
 function mudarBotao(){
     if(contador%2 == 1){

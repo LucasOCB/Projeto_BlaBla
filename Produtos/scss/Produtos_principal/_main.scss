@@ -41,53 +41,14 @@
                 grid-template-rows: repat(3, 1fr);
                 justify-content: center;
                 align-items:center;
-                padding:10px;
+                // padding:10px;
                 // gap:5px;
                 .container_1, .container_2, .container_3{
-                    justify-content: space-around;
-                }
-                .container_1{
-                    display:grid;
-                    grid-template-columns: 400px 200px 200px;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
                     .img{
-                        &:nth-child(2), &:nth-child(3){
-                            max-width:200px;
-                            max-height:200px;
-                        }
-                        &:nth-child(1){
-                            max-width:400px;
-                            max-height:200px;
-                        }
-                    }
-                }
-                .container_2{
-                    display:grid;
-                    // gap: 5px;
-                    grid-template-columns: 200px 400px 200px;
-                    .img{
-                        &:nth-child(1), &:nth-child(3){
-                            max-width:200px;
-                            max-height:200px;
-                        }
-                        &:nth-child(2){
-                            max-width:400px;
-                            max-height:200px;
-                        }
-                    }
-                }
-                .container_3{
-                    display:grid;
-                    // gap: 5px;
-                    grid-template-columns: 200px 200px 400px;
-                    .img{
-                        &:nth-child(1), &:nth-child(2){
-                            max-width:200px;
-                            max-height:200px;
-                        }
-                        &:nth-child(3){
-                            max-width:400px;
-                            max-height:200px;
-                        }
+                        display:inline;
                     }
                 }
             }

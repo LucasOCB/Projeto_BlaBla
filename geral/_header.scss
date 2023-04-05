@@ -56,7 +56,7 @@
                     align-items: start;
                     transition-duration: 0.2s;
                     top:-40px;
-                    buttom{
+                    button{
                         padding:0;
                     }
                 }
@@ -139,9 +139,18 @@
             }
         }
         .nav-pills{
-            a{
-                *{
-                    color:$cinza !important;
+            .nav-lista{
+                li{
+                    a{
+                        font{
+                            color: $cinza;
+                        }
+                        &:hover{
+                            font{
+                                color:white;
+                            }
+                        }
+                    }
                 }
             }
         }

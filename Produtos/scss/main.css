@@ -49,7 +49,7 @@
     transition-duration: 0.2s;
     top: -40px;
   }
-  #header #div-cabecalho main .nav-pills buttom {
+  #header #div-cabecalho main .nav-pills button {
     padding: 0;
   }
   #header #div-cabecalho main #botao {
@@ -119,8 +119,11 @@
 #header #cabecalho #logo-header:hover {
   width: 160px !important;
 }
-#header #cabecalho .nav-pills a * {
-  color: #414f64 !important;
+#header #cabecalho .nav-pills .nav-lista li a font {
+  color: #414f64;
+}
+#header #cabecalho .nav-pills .nav-lista li a:hover font {
+  color: white;
 }
 
 .aparecer {
@@ -309,46 +312,14 @@ li {
     grid-template-rows: repat(3, 1fr);
     justify-content: center;
     align-items: center;
-    padding: 10px;
   }
   #main .imagens_produtos .container_grid .container_1, #main .imagens_produtos .container_grid .container_2, #main .imagens_produtos .container_grid .container_3 {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #main .imagens_produtos .container_grid .container_1 {
-    display: grid;
-    grid-template-columns: 400px 200px 200px;
-  }
-  #main .imagens_produtos .container_grid .container_1 .img:nth-child(2), #main .imagens_produtos .container_grid .container_1 .img:nth-child(3) {
-    max-width: 200px;
-    max-height: 200px;
-  }
-  #main .imagens_produtos .container_grid .container_1 .img:nth-child(1) {
-    max-width: 400px;
-    max-height: 200px;
-  }
-  #main .imagens_produtos .container_grid .container_2 {
-    display: grid;
-    grid-template-columns: 200px 400px 200px;
-  }
-  #main .imagens_produtos .container_grid .container_2 .img:nth-child(1), #main .imagens_produtos .container_grid .container_2 .img:nth-child(3) {
-    max-width: 200px;
-    max-height: 200px;
-  }
-  #main .imagens_produtos .container_grid .container_2 .img:nth-child(2) {
-    max-width: 400px;
-    max-height: 200px;
-  }
-  #main .imagens_produtos .container_grid .container_3 {
-    display: grid;
-    grid-template-columns: 200px 200px 400px;
-  }
-  #main .imagens_produtos .container_grid .container_3 .img:nth-child(1), #main .imagens_produtos .container_grid .container_3 .img:nth-child(2) {
-    max-width: 200px;
-    max-height: 200px;
-  }
-  #main .imagens_produtos .container_grid .container_3 .img:nth-child(3) {
-    max-width: 400px;
-    max-height: 200px;
+  #main .imagens_produtos .container_grid .container_1 .img, #main .imagens_produtos .container_grid .container_2 .img, #main .imagens_produtos .container_grid .container_3 .img {
+    display: inline;
   }
   #main .container_grid {
     background-color: blue;
