@@ -4,3 +4,77 @@ $azul:#3b53a3;
 $roxo:#a84598;
 $laranja:#f16923;
 $cinza:#414f64;
+
+.btn_geral{
+    padding:6px 12px;
+    border-radius:0.25rem;
+    background-color: white;
+    border:1px solid;
+    &:hover{
+        color:white;
+    }
+}
+.btn_vermelo{
+    color:$vermelho;
+    &:hover{
+        background-color: $vermelho;
+        border-color: $vermelho;
+    }
+    &:focus{
+        box-shadow: 0 0 5px $vermelho;
+    }
+}
+.btn_verde{
+    color:$verde;
+    &:hover{
+        background-color: $verde;
+        border-color: $verde;
+    }
+    &:focus{
+        box-shadow: 0 0 5px $verde
+    }
+}
+.btn_azul{
+    color:$azul;
+    &:hover{
+        background-color: $azul;
+        border-color: $azul;
+    }
+    &:focus{
+        border-color: $azul;
+        box-shadow: 0 0 5px $azul;
+    }
+}
+.btn_roxo{
+    color:$roxo;
+    &:hover{
+        background-color: $roxo;
+        border-color: $roxo;
+    }
+    &:focus{
+        border-color: $roxo;
+        box-shadow: 0 0 5px $roxo;
+    }
+}
+.btn_laranja{
+    color:$laranja;
+    &:hover{
+        background-color: $laranja;
+        border-color: $laranja;
+    }
+    &:focus{
+        border-color: $laranja;
+        box-shadow: 0 0 5px $laranja;
+    }
+}
+.btn_cinza{
+    color:$cinza;
+    &:hover{
+        background-color: $cinza;
+        border-color: $cinza;
+    }
+    &:focus{
+        border-color: $cinza;
+        box-shadow: 0 0 5px $cinza;
+    }
+}

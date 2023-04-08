@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'blabla';
-    src: url('../Fonte/Omnes_Pro_Bold.otf');
+    src: url('../Fonte/blabla.otf');
 }
 *{
     font-family: 'blabla';
@@ -13,4 +13,6 @@
 li{
     list-style: none;
 }
-
+body{
+    max-width:100vw;
+}

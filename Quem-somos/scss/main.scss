@@ -1,1 +1,13 @@
-@import "../../geral/main.scss";
+@import "../../geral/main.scss", "sobre_main/main";
+
+@font-face {
+    font-family: 'blabla';
+    src: url('../../Fonte/blabla.otf');
+}
+*{
+    font-family: 'blabla';
+}
+
+body{
+    min-height: 300px;
+}

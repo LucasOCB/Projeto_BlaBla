@@ -3,13 +3,33 @@ var validar = false;
 var barra1 = document.getElementById('bc');
 var barra2 = document.getElementById('bm');
 var barra3 = document.getElementById('bb');
-var wats_ani = document.getElementById('wats_ani');
 var botoes = document.getElementById('botoes');
 var body = document.getElementById('body');
+var div_imagem_ativada = document.getElementById('div_imagem_ativada')
+var img_imagem_ativada = document.getElementById('img_imagem_ativada')
 var imagens_produtos = document.getElementById('imagens_produtos');
 var descricao = document.getElementById('descricao');
 const imagens = document.getElementsByClassName('img_img');
+const div_imagens = document.getElementsByClassName('img');
+var header_blur = document.getElementById("header");
+var main_blur = document.getElementById("main");
+var footer_blur = document.getElementById("footer");
 var contador = 0; 
+var contador_imagem_hover = 0;
+var contador_tipoImagem = 0;
+
+div_imagem_ativada.addEventListener("click", () => {foco_imagem()})
+for(let x = 0; x < div_imagens.length; x++){
+    div_imagens[x].addEventListener("click", () => {
+        foco_imagem(contador_imagem_hover);
+    })
+}
+for(let x = 0; x < imagens.length; x++){
+    imagens[x].classList.add('hover_img')
+    imagens[x].addEventListener("click", () => {
+        contador_imagem_hover = x;
+    })
+}
 const imgs_1_camisetas = [
     "../img/produtos/camisetas/cami1.jpeg",
     "../img/produtos/camisetas/cami2.jpeg",
@@ -112,6 +132,22 @@ const imgs_9_pijamas = [
 
 const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bodys, imgs_7_jardineiras, imgs_8_acessorios, imgs_9_pijamas]
 
+
+function trocar(dado){
+    contador += 1;
+    if(dado == 2 && contador%2 == 1){
+        contador -= 1
+        return
+    }
+    if(contador%2 == 1){
+        var validar = true;
+        
+    }else if(contador%2 == 0){
+        var validar = false;
+    }
+    mudarBotao();
+    mudar(validar);
+}
 function mudarBotao(){
     if(contador%2 == 1){
         barra1.classList.add('mbc')
@@ -123,23 +159,9 @@ function mudarBotao(){
         barra3.classList.remove('mbb')
     }
 }
-
-function trocar(){
-    contador += 1;
-    if(contador%2 == 1){
-        var validar = true;
-        
-    }else if(contador%2 == 0){
-        var validar = false;
-    }
-    mudarBotao();
-    mudar(validar);
-}
-
 function mudar(dado){
     if(dado == true){
         lista_nav.classList.add('aparecer');
-        delay_wats();
     }else if(dado == false){
         lista_nav.classList.remove('aparecer');
     }
@@ -164,8 +186,17 @@ function fixar_botoes(dado1){
     }
 }
 function mudar_imagens(numero){
+    contador_tipoImagem = numero
     for(let contador = 0; contador < imagens.length; contador++){
         imagens[contador].setAttribute("src", tipos_imagens[numero][contador])
         // console.log(tipos_imagens[numero][contador])
     }
+}
+function foco_imagem(){
+    div_imagem_ativada.classList.toggle('foco_img')
+    div_imagem_ativada.classList.toggle('foco_img_desaparecer')
+    img_imagem_ativada.setAttribute("src", tipos_imagens[contador_tipoImagem][contador_imagem_hover])
+    header_blur.classList.toggle('blur');
+    main_blur.classList.toggle('blur');
+    footer_blur.classList.toggle('blur');
 }

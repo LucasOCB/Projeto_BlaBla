@@ -1,3 +1,83 @@
+.btn_geral {
+  padding: 6px 12px;
+  border-radius: 0.25rem;
+  background-color: white;
+  border: 1px solid;
+}
+.btn_geral:hover {
+  color: white;
+}
+
+.btn_vermelo {
+  color: #eb2726;
+}
+.btn_vermelo:hover {
+  background-color: #eb2726;
+  border-color: #eb2726;
+}
+.btn_vermelo:focus {
+  box-shadow: 0 0 5px #eb2726;
+}
+
+.btn_verde {
+  color: #46b763;
+}
+.btn_verde:hover {
+  background-color: #46b763;
+  border-color: #46b763;
+}
+.btn_verde:focus {
+  box-shadow: 0 0 5px #46b763;
+}
+
+.btn_azul {
+  color: #3b53a3;
+}
+.btn_azul:hover {
+  background-color: #3b53a3;
+  border-color: #3b53a3;
+}
+.btn_azul:focus {
+  border-color: #3b53a3;
+  box-shadow: 0 0 5px #3b53a3;
+}
+
+.btn_roxo {
+  color: #a84598;
+}
+.btn_roxo:hover {
+  background-color: #a84598;
+  border-color: #a84598;
+}
+.btn_roxo:focus {
+  border-color: #a84598;
+  box-shadow: 0 0 5px #a84598;
+}
+
+.btn_laranja {
+  color: #f16923;
+}
+.btn_laranja:hover {
+  background-color: #f16923;
+  border-color: #f16923;
+}
+.btn_laranja:focus {
+  border-color: #f16923;
+  box-shadow: 0 0 5px #f16923;
+}
+
+.btn_cinza {
+  color: #414f64;
+}
+.btn_cinza:hover {
+  background-color: #414f64;
+  border-color: #414f64;
+}
+.btn_cinza:focus {
+  border-color: #414f64;
+  box-shadow: 0 0 5px #414f64;
+}
+
 @media (min-width: 1000px) {
   #header {
     background-color: red;
@@ -284,7 +364,7 @@
 }
 @font-face {
   font-family: "blabla";
-  src: url("../Fonte/Omnes_Pro_Bold.otf");
+  src: url("../Fonte/blabla.otf");
 }
 * {
   font-family: "blabla";
@@ -295,6 +375,10 @@
 
 li {
   list-style: none;
+}
+
+body {
+  max-width: 100vw;
 }
 
 @media (max-width: 920px) {

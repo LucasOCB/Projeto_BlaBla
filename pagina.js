@@ -46,8 +46,12 @@ function mudarBotao(){
     }
 }
 
-function trocar(){
+function trocar(dado){
     contador += 1;
+    if(dado == 2 && contador%2 == 1){
+        contador -= 1
+        return
+    }
     if(contador%2 == 1){
         var validar = true;
         
