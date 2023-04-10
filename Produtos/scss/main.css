@@ -93,6 +93,8 @@
   }
   #header #div-cabecalho main .nav-pills .nav-lista {
     padding: 0;
+    display: flex;
+    align-items: center;
   }
   #header #div-cabecalho main .nav-pills .nav-link {
     padding-left: 0;
@@ -191,7 +193,7 @@
 }
 #header #cabecalho {
   height: 98px;
-  background-color: blue;
+  background-color: #3b53a3;
 }
 #header #cabecalho #logo-header {
   transition-duration: 0.8s;
@@ -267,6 +269,12 @@
   }
 }
 @media (max-width: 770px) {
+  #main #header_main {
+    height: 200px !important;
+    padding: 30px 0 !important;
+    background-color: white !important;
+    flex-direction: column;
+  }
   #main footer {
     flex-direction: column;
     height: 170px;
@@ -279,6 +287,18 @@
 }
 #main {
   margin-top: 98px;
+}
+#main #header_main {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  background-color: #f16923;
+  overflow: hidden;
+}
+#main #header_main img {
+  width: 120px;
 }
 #main footer {
   width: 100%;
@@ -383,12 +403,12 @@ body {
 
 @media (min-width: 1325px) {
   .padding_pos_fixo {
-    padding-top: 79px;
+    padding-top: 89px;
   }
 }
 @media (max-width: 1324px) {
   .padding_pos_fixo {
-    padding-top: 116px;
+    padding-top: 126px;
   }
 }
 @media (min-width: 766px) {
@@ -421,7 +441,7 @@ body {
   }
 }
 @media (max-width: 765px) {
-  #main header {
+  #main #header_main {
     height: 200px !important;
     padding: 30px 0 !important;
     background-color: white !important;
@@ -468,11 +488,14 @@ body {
   .msg_siga {
     margin: 10px 0;
   }
+  .marcas .conteiner .c1 div, .marcas .conteiner .c2 div, .marcas .conteiner .c3 div {
+    width: 20% !important;
+  }
 }
 #main header, #main .descricao {
   margin: 0 auto;
 }
-#main header {
+#main #header_main {
   height: 150px;
   display: flex;
   align-items: center;
@@ -481,7 +504,7 @@ body {
   background-color: #f16923;
   overflow: hidden;
 }
-#main header img {
+#main #header_main img {
   width: 120px;
 }
 #main .descricao {
@@ -520,8 +543,11 @@ body {
   gap: 1%;
   justify-content: center;
   transition-duration: 0.2s;
-  padding: 20px 0;
+  padding: 10px 0 20px 0;
   z-index: 9;
+}
+#main .botoes button {
+  margin-top: 10px;
 }
 #main .imagens_produtos .container_grid {
   margin: 0 auto;
@@ -535,6 +561,42 @@ body {
   background-clip: border-box;
   box-shadow: 1px 1px 10px black;
 }
+#main .marcas {
+  width: 100%;
+}
+#main .marcas h1 {
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 20px 0 0 0;
+}
+#main .marcas .conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+#main .marcas .conteiner .c1, #main .marcas .conteiner .c2, #main .marcas .conteiner .c3, #main .marcas .conteiner .c4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+#main .marcas .conteiner .c1 div, #main .marcas .conteiner .c2 div, #main .marcas .conteiner .c3 div, #main .marcas .conteiner .c4 div {
+  width: 15%;
+  transition-duration: 0.5s;
+}
+#main .marcas .conteiner .c1 div:hover, #main .marcas .conteiner .c2 div:hover, #main .marcas .conteiner .c3 div:hover, #main .marcas .conteiner .c4 div:hover {
+  transform: scale(1.2);
+}
+#main .marcas .conteiner .c1 div img, #main .marcas .conteiner .c2 div img, #main .marcas .conteiner .c3 div img, #main .marcas .conteiner .c4 div img {
+  width: 100%;
+}
+#main .marcas .conteiner .c2 div:nth-child(3) {
+  padding: 2px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: black;
+}
 #main .msg_siga {
   padding: 20px 0;
   height: 100px;
@@ -544,8 +606,9 @@ body {
 }
 #main .msg_siga h1 {
   width: 80%;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
+  border-top: 1px solid #eb2726;
+  border-bottom: 1px solid #eb2726;
+  padding: 5px 0;
   font-size: 1.5em;
   text-align: center;
 }
@@ -599,6 +662,7 @@ body {
 
 .fixar_botoes {
   z-index: 3 !important;
+  border-radius: 0 0 5px 5px;
 }
 
 .imagens_produtos {

@@ -1,12 +1,12 @@
 
 @media(min-width:1325px){
     .padding_pos_fixo{
-        padding-top:79px;
+        padding-top:89px;
     }
 }
 @media(max-width:1324px){
     .padding_pos_fixo{
-        padding-top:116px;
+        padding-top:126px;
     }
 }
 @media(min-width:766px){
@@ -42,7 +42,7 @@
 }
 @media(max-width:765px){
     #main{
-        header{
+        #header_main{
             height:200px !important;
             padding:30px 0 !important;
             background-color:white !important;
@@ -94,12 +94,21 @@
     .msg_siga{
         margin:10px 0;
     }
+    .marcas{
+        .conteiner{
+            .c1, .c2, .c3{
+                div{
+                    width:20% !important;
+                }
+            }
+        }
+    }
 }
 #main{
     header, .descricao{
         margin:0 auto;
     }
-    header{
+    #header_main{
         height:150px;
         display:flex;
         align-items: center;
@@ -147,8 +156,11 @@
         gap:1%;
         justify-content: center;
         transition-duration: 0.2s;
-        padding:20px 0;
+        padding:10px 0 20px 0;
         z-index: 9;
+        button{
+            margin-top:10px;
+        }
     }
     .imagens_produtos{
         .container_grid{
@@ -165,6 +177,46 @@
 
         }
     }
+    .marcas{
+        width:100%;
+        h1{
+            text-align: center;
+            margin:10px 0 0 0;
+            padding:20px 0 0 0;
+        }
+        .conteiner{
+            display:flex;
+            flex-direction: column;
+            gap:5%;
+            max-width:80%;
+            margin:0 auto;
+            .c1, .c2, .c3, .c4{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                gap:10%;
+                div{
+                    width: 15%;
+                    transition-duration: 0.5s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .c2{
+                div{
+                    &:nth-child(3){
+                        padding:2px 5px 5px 5px;
+                        border-radius:5px;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
     .msg_siga{
         padding:20px 0;
         height:100px;
@@ -173,8 +225,9 @@
         align-items: center;
         h1{
             width:80%;
-            border-top: 1px solid red;
-            border-bottom: 1px solid red;
+            border-top: 1px solid $vermelho;
+            border-bottom: 1px solid $vermelho;
+            padding:5px 0;
             font-size:1.5em;
             text-align: center;
         }
@@ -222,6 +275,7 @@ body{
 }
 .fixar_botoes{
     z-index: 3 !important;
+    border-radius:0 0 5px 5px;
 }
 .imagens_produtos{
     z-index: -99;

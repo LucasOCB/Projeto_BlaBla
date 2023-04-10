@@ -93,6 +93,8 @@
   }
   #header #div-cabecalho main .nav-pills .nav-lista {
     padding: 0;
+    display: flex;
+    align-items: center;
   }
   #header #div-cabecalho main .nav-pills .nav-link {
     padding-left: 0;
@@ -191,7 +193,7 @@
 }
 #header #cabecalho {
   height: 98px;
-  background-color: blue;
+  background-color: #3b53a3;
 }
 #header #cabecalho #logo-header {
   transition-duration: 0.8s;
@@ -267,6 +269,12 @@
   }
 }
 @media (max-width: 770px) {
+  #main #header_main {
+    height: 200px !important;
+    padding: 30px 0 !important;
+    background-color: white !important;
+    flex-direction: column;
+  }
   #main footer {
     flex-direction: column;
     height: 170px;
@@ -279,6 +287,18 @@
 }
 #main {
   margin-top: 98px;
+}
+#main #header_main {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  background-color: #f16923;
+  overflow: hidden;
+}
+#main #header_main img {
+  width: 120px;
 }
 #main footer {
   width: 100%;
