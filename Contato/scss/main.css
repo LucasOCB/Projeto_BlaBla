@@ -401,6 +401,19 @@ body {
   max-width: 100vw;
 }
 
+#main {
+  overflow: hidden;
+}
+#main .apresentacao {
+  display: flex;
+  justify-content: space-between;
+}
+#main .apresentacao .texto * {
+  text-align: center;
+}
+#main .apresentacao .texto h1 {
+  margin-top: 20px;
+}
 @font-face {
   font-family: "blabla";
   src: url("../../Fonte/blabla.otf");

@@ -454,6 +454,9 @@ body {
   #main .botoes {
     width: 100%;
   }
+  #main .botoes .conteiner_cell {
+    width: 100%;
+  }
   #main .imagens_produtos {
     background-color: 0;
   }
@@ -490,6 +493,19 @@ body {
   }
   .marcas .conteiner .c1 div, .marcas .conteiner .c2 div, .marcas .conteiner .c3 div {
     width: 20% !important;
+  }
+}
+@media (max-width: 550px) {
+  .botoes {
+    display: block !important;
+    overflow: auto;
+    padding: 10px 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .botoes .conteiner_cell {
+    display: block !important;
+    width: 980px !important;
+    margin: 0 10px;
   }
 }
 #main header, #main .descricao {
@@ -537,14 +553,16 @@ body {
 }
 #main .botoes {
   margin: 0 auto;
+  transition-duration: 0.1s;
+  padding: 10px 0 20px 0;
+  z-index: 9;
+}
+#main .botoes .conteiner_cell {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 1%;
-  justify-content: center;
-  transition-duration: 0.2s;
-  padding: 10px 0 20px 0;
-  z-index: 9;
 }
 #main .botoes button {
   margin-top: 10px;
@@ -667,6 +685,14 @@ body {
 
 .imagens_produtos {
   z-index: -99;
+}
+
+.redirect4 {
+  width: 90% !important;
+}
+
+.redirect4_2 {
+  width: 105% !important;
 }
 
 @font-face {

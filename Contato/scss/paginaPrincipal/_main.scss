@@ -1,0 +1,17 @@
+#main{
+    overflow: hidden;
+    .apresentacao{
+        display:flex;
+        justify-content: space-between;
+        .texto{
+            *{
+                text-align: center;
+            }
+            h1{
+                margin-top:20px;
+            }
+        }
+        .img{
+        }
+    }
+}

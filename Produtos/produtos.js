@@ -18,6 +18,7 @@ var contador = 0;
 var contador_imagem_hover = 0;
 var contador_tipoImagem = 0;
 
+
 div_imagem_ativada.addEventListener("click", () => {foco_imagem()})
 for(let x = 0; x < div_imagens.length; x++){
     div_imagens[x].addEventListener("click", () => {
@@ -64,37 +65,37 @@ const imgs_3_conjuntos = [
     "../img/produtos/conjuntos/conj9.jpeg"
 ];
 const imgs_4_vestidos = [
-    "../img/produtos/vestidos/1",
-    "../img/produtos/vestidos/2",
-    "../img/produtos/vestidos/3",
-    "../img/produtos/vestidos/4",
-    "../img/produtos/vestidos/5",
-    "../img/produtos/vestidos/6",
-    "../img/produtos/vestidos/7",
-    "../img/produtos/vestidos/8",
-    "../img/produtos/vestidos/9"
+    "../img/produtos/vestidos/ves1.jpeg",
+    "../img/produtos/vestidos/ves2.jpeg",
+    "../img/produtos/vestidos/ves3.jpeg",
+    "../img/produtos/vestidos/ves4.jpeg",
+    "../img/produtos/vestidos/ves5.jpeg",
+    "../img/produtos/vestidos/ves6.jpeg",
+    "../img/produtos/vestidos/ves7.jpeg",
+    "../img/produtos/vestidos/ves8.jpeg",
+    "../img/produtos/vestidos/ves9.jpeg"
 ];
 const imgs_5_calcas = [
-    "../img/produtos/calcas/1",
-    "../img/produtos/calcas/2",
-    "../img/produtos/calcas/3",
-    "../img/produtos/calcas/4",
-    "../img/produtos/calcas/5",
-    "../img/produtos/calcas/6",
-    "../img/produtos/calcas/7",
-    "../img/produtos/calcas/8",
-    "../img/produtos/calcas/9"
+    "../img/produtos/calcas/cal1.jpeg",
+    "../img/produtos/calcas/cal2.jpeg",
+    "../img/produtos/calcas/cal3.jpeg",
+    "../img/produtos/calcas/cal4.jpeg",
+    "../img/produtos/calcas/cal5.jpeg",
+    "../img/produtos/calcas/cal6.jpeg",
+    "../img/produtos/calcas/cal7.jpeg",
+    "../img/produtos/calcas/cal8.jpeg",
+    "../img/produtos/calcas/cal9.jpeg"
 ];
-const imgs_6_bodys = [
-    "../img/produtos/bodys/1",
-    "../img/produtos/bodys/2",
-    "../img/produtos/bodys/3",
-    "../img/produtos/bodys/4",
-    "../img/produtos/bodys/5",
-    "../img/produtos/bodys/6",
-    "../img/produtos/bodys/7",
-    "../img/produtos/bodys/8",
-    "../img/produtos/bodys/9"
+const imgs_6_bebes = [
+    "../img/produtos/bebe/bebe1.jpeg",
+    "../img/produtos/bebe/bebe2.jpeg",
+    "../img/produtos/bebe/bebe3.jpeg",
+    "../img/produtos/bebe/bebe4.jpeg",
+    "../img/produtos/bebe/bebe5.jpeg",
+    "../img/produtos/bebe/bebe6.jpeg",
+    "../img/produtos/bebe/bebe7.jpeg",
+    "../img/produtos/bebe/bebe8.jpeg",
+    "../img/produtos/bebe/bebe9.jpeg"
 ];
 const imgs_7_jardineiras = [
     "../img/produtos/jardineiras/1",
@@ -130,7 +131,7 @@ const imgs_9_pijamas = [
     "../img/produtos/pijamas/9"
 ]
 
-const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bodys, imgs_7_jardineiras, imgs_8_acessorios, imgs_9_pijamas]
+const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bebes, imgs_7_jardineiras, imgs_8_acessorios, imgs_9_pijamas]
 
 
 function trocar(dado){
@@ -187,9 +188,9 @@ function fixar_botoes(dado1){
 }
 function mudar_imagens(numero){
     contador_tipoImagem = numero
+    redirect_imagens_evento(numero)
     for(let contador = 0; contador < imagens.length; contador++){
-        imagens[contador].setAttribute("src", tipos_imagens[numero][contador])
-        // console.log(tipos_imagens[numero][contador])
+        imagens[contador].setAttribute("src", tipos_imagens[numero][contador]);
     }
 }
 function foco_imagem(){
@@ -199,4 +200,22 @@ function foco_imagem(){
     header_blur.classList.toggle('blur');
     main_blur.classList.toggle('blur');
     footer_blur.classList.toggle('blur');
+}
+function redirect_imagens_evento(dado){
+    if(dado == 3){
+        redirect_4(true)
+    }else{
+        redirect_4(false)
+    }
+}
+function redirect_4(dado){
+    if(dado == true){
+        div_imagens[6].classList.add('redirect4');
+        div_imagens[7].classList.add('redirect4_2');
+        div_imagens[8].classList.add('redirect4_2');
+    }else{
+        div_imagens[6].classList.remove('redirect4');
+        div_imagens[7].classList.remove('redirect4_2');
+        div_imagens[8].classList.remove('redirect4_2');
+    }
 }
