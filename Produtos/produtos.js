@@ -97,18 +97,7 @@ const imgs_6_bebes = [
     "../img/produtos/bebe/bebe8.jpeg",
     "../img/produtos/bebe/bebe9.jpeg"
 ];
-const imgs_7_jardineiras = [
-    "../img/produtos/jardineiras/1",
-    "../img/produtos/jardineiras/2",
-    "../img/produtos/jardineiras/3",
-    "../img/produtos/jardineiras/4",
-    "../img/produtos/jardineiras/5",
-    "../img/produtos/jardineiras/6",
-    "../img/produtos/jardineiras/7",
-    "../img/produtos/jardineiras/8",
-    "../img/produtos/jardineiras/9"
-];
-const imgs_8_acessorios = [
+const imgs_7_acessorios = [
     "../img/produtos/acessorios/1",
     "../img/produtos/acessorios/2",
     "../img/produtos/acessorios/3",
@@ -119,7 +108,7 @@ const imgs_8_acessorios = [
     "../img/produtos/acessorios/8",
     "../img/produtos/acessorios/9"
 ];
-const imgs_9_pijamas = [
+const imgs_8_pijamas = [
     "../img/produtos/pijamas/1",
     "../img/produtos/pijamas/2",
     "../img/produtos/pijamas/3",
@@ -131,8 +120,7 @@ const imgs_9_pijamas = [
     "../img/produtos/pijamas/9"
 ]
 
-const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bebes, imgs_7_jardineiras, imgs_8_acessorios, imgs_9_pijamas]
-
+const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bebes, imgs_7_acessorios, imgs_8_pijamas]
 
 function trocar(dado){
     contador += 1;

@@ -499,12 +499,12 @@ body {
   .botoes {
     display: block !important;
     overflow: auto;
-    padding: 10px 0 !important;
+    padding: 10px 20px !important;
     margin-bottom: 10px !important;
   }
   .botoes .conteiner_cell {
-    display: block !important;
-    width: 980px !important;
+    width: 850px !important;
+    flex-wrap: nowrap !important;
     margin: 0 10px;
   }
 }
