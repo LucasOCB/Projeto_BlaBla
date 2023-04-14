@@ -79,9 +79,6 @@
 }
 
 @media (min-width: 1000px) {
-  #header {
-    background-color: red;
-  }
   #header #div-cabecalho main {
     padding: 0 50px;
   }
@@ -193,7 +190,7 @@
 }
 #header #cabecalho {
   height: 98px;
-  background-color: #3b53a3;
+  background: linear-gradient(to right, rgb(97, 102, 242) 0%, rgb(135, 210, 251) 75%);
 }
 #header #cabecalho #logo-header {
   transition-duration: 0.8s;
@@ -578,14 +575,12 @@ body {
 }
 #main .links .flex .link {
   height: 400px;
-  width: 25%;
   min-width: 240px;
   border: 1px solid black;
   border-radius: 20px;
   padding: 15px;
 }
 #main .links .flex .link .divisoria {
-  background-color: blue;
   height: 100%;
 }
 #main .links .flex .link .divisoria .msg {
@@ -598,7 +593,7 @@ body {
   margin: 0px 10px 0 0;
 }
 #main .links .flex .link .divisoria .msg h1 a {
-  color: white !important;
+  color: #414f64 !important;
 }
 #main .links .flex .link .divisoria .msg:hover h1 a {
   font-size: 1.1em;
@@ -608,7 +603,6 @@ body {
 }
 #main .links .flex .link .divisoria .img {
   height: 278px;
-  background-color: green;
   display: flex;
   justify-content: center;
 }
@@ -617,7 +611,7 @@ body {
   transition-duration: 0.5s;
 }
 #main .links .flex .link .divisoria .img:hover img {
-  height: 105%;
+  transform: scale(1.04);
 }
 #main .links .flex .link:nth-child(1) .divisoria .msg h1 {
   text-align: end;

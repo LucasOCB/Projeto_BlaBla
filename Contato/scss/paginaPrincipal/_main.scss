@@ -1,17 +1,108 @@
+@media(min-width: 1130px){
+    #main{
+        .apresentacao{
+            display:flex;
+        justify-content: space-between;
+        padding:0 15px;
+        }
+    }
+}
+@media(max-width: 1130px){
+    #main{
+        .apresentacao{
+            flex-direction: column;
+            .texto{
+                .container_beneficios{
+                    margin-top:20px;
+                    display:grid;
+                    align-items: center;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    .beneficios{
+                        // border:1px solid black;
+                    }
+                    *{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 760px){
+    #main{
+        .apresentacao{
+            flex-direction: column;
+            .texto{
+                .container_beneficios{
+                    display:flex;
+                    *{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
 #main{
     overflow: hidden;
     .apresentacao{
-        display:flex;
-        justify-content: space-between;
         .texto{
-            *{
-                text-align: center;
+            .titulo{
+                *{
+                    text-align: center;
+                }
+                h1{
+                    margin:20px 0px;
+                }
+                p{
+
+                }
             }
-            h1{
-                margin-top:20px;
+            .container_beneficios{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+                .beneficios{
+                    h2{
+                        font-size: 1.2em;
+                        &::before{
+                            content: '+';
+                            margin-right:5px;
+                        }
+                    }
+                    p{
+                        max-width:900px;
+                    }
+                }
             }
         }
         .img{
+            // overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left:5px;
+            a{
+                #imagem_fundo{
+                    width:344px;
+                    height:493px;
+                    transition-duration: 0.4s;
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
+            }
         }
     }
+    .redes_sociais{
+        h1{
+            text-align: center;
+        }
+        .links{}
+    }
+}
+#mini_wats{
+    display:inline !important;
 }

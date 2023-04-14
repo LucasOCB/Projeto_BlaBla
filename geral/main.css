@@ -79,9 +79,6 @@
 }
 
 @media (min-width: 1000px) {
-  #header {
-    background-color: red;
-  }
   #header #div-cabecalho main {
     padding: 0 50px;
   }
@@ -193,7 +190,7 @@
 }
 #header #cabecalho {
   height: 98px;
-  background-color: #3b53a3;
+  background: linear-gradient(to right, rgb(97, 102, 242) 0%, rgb(135, 210, 251) 75%);
 }
 #header #cabecalho #logo-header {
   transition-duration: 0.8s;

@@ -1,6 +1,5 @@
 @media (min-width:1000px){
     #header{
-        background-color:red;
         #div-cabecalho{
             main{
                 padding:0 50px;
@@ -133,7 +132,7 @@
     top:0;
     #cabecalho{
         height:98px;
-        background-color: $azul;
+        background: linear-gradient(to right, rgb(97, 102, 242) 0%, rgb(135, 210, 251) 75%);
         #logo-header{
             transition-duration: 0.8s;
             &:hover{

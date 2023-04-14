@@ -236,13 +236,13 @@
             justify-content: space-evenly;
             .link{
                 height:400px;
-                width:25%;
+                // width:25%;
                 min-width:240px;
                 border:1px solid black;
                 border-radius:20px;
                 padding:15px;
                 .divisoria{
-                    background-color: blue;
+                    // background-color: blue;
                     height:100%;
                     .msg{
                         height:90px;
@@ -252,7 +252,7 @@
                             padding:25px;
                             margin:0px 10px 0 0;
                             a{
-                                color:white !important;
+                                color:$cinza !important;
                             }
                         }
                         &:hover{
@@ -268,7 +268,7 @@
                     }
                     .img{
                         height:278px;
-                        background-color: green;
+                        // background-color: green;
                         display:flex;
                         justify-content: center;
                         img{
@@ -277,7 +277,7 @@
                         }
                         &:hover{
                             img{
-                                height:105%;
+                                transform: scale(1.04);
                             }
                         }
                     }

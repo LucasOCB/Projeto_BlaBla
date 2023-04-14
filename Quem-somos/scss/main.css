@@ -79,9 +79,6 @@
 }
 
 @media (min-width: 1000px) {
-  #header {
-    background-color: red;
-  }
   #header #div-cabecalho main {
     padding: 0 50px;
   }
@@ -193,7 +190,7 @@
 }
 #header #cabecalho {
   height: 98px;
-  background-color: #3b53a3;
+  background: linear-gradient(to right, rgb(97, 102, 242) 0%, rgb(135, 210, 251) 75%);
 }
 #header #cabecalho #logo-header {
   transition-duration: 0.8s;
@@ -399,6 +396,68 @@ li {
 
 body {
   max-width: 100vw;
+}
+
+@media (max-width: 770px) {
+  #main .valores .v1, #main .valores .v2, #main .valores .v3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #main .valores * {
+    text-align: center;
+  }
+}
+@media (min-width: 575px) {
+  #main #container_avaliacao #linha_avaliacoes .col:nth-child(3) {
+    margin: 16px auto 0 auto;
+  }
+}
+#main .avaliacoes {
+  margin-top: 15px;
+}
+#main .avaliacoes .titulo h1 {
+  text-align: center;
+}
+#main #card_comentario #div_img_coment {
+  width: 100%;
+  background-image: url("../../../img/blabla/Guaxinim.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+#main #card_comentario .card-body p {
+  text-align: center;
+}
+#main #card_comentario .card-body p::before, #main #card_comentario .card-body p::after {
+  content: '"';
+  padding: 5px;
+}
+#main .valores {
+  width: 100%;
+  padding: 0 10px;
+}
+#main .valores .h1 {
+  text-align: center;
+}
+#main .valores .v1, #main .valores .v2, #main .valores .v3 {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+#main .valores .v1 .img img, #main .valores .v2 .img img, #main .valores .v3 .img img {
+  width: 100px;
+}
+#main .valores .v1 {
+  background: linear-gradient(to right, rgba(97, 213, 242, 0.448) 0%, rgba(135, 251, 214, 0.682) 75%);
+}
+#main .valores .v2 {
+  background: linear-gradient(to right, rgba(242, 155, 97, 0.448) 0%, rgba(218, 251, 135, 0.682) 75%);
+}
+#main .valores .v3 {
+  background: linear-gradient(to right, rgba(199, 97, 242, 0.448) 0%, rgba(251, 135, 203, 0.682) 75%);
 }
 
 @font-face {

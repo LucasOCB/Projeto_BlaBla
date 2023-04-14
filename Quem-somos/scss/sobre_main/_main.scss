@@ -1,0 +1,82 @@
+@media(max-width: 770px){
+    #main{
+        .valores{
+            .v1, .v2, .v3{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            *{
+                text-align: center;
+            }
+        }
+    }
+}
+@media(min-width: 575px){
+    #main{
+        #container_avaliacao{
+            #linha_avaliacoes{
+                .col{
+                    &:nth-child(3){
+                        margin:16px auto 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+#main{
+    .avaliacoes{
+        margin-top:15px;
+        .titulo{
+            h1{
+                text-align: center;
+            }
+        }
+    }
+    #card_comentario{
+        #div_img_coment{
+            width: 100%;
+            background-image: url("../../../img/blabla/Guaxinim.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height:200px;
+        }
+        .card-body{
+            p{
+                text-align: center;
+                &::before, &::after{
+                    content: '"';
+                    padding:5px;
+                }
+            }
+        }
+    }
+    .valores{
+        width:100%;
+        padding:0 10px;
+        .h1{
+            text-align: center;
+
+        }
+        .v1, .v2, .v3{
+            display:flex;
+            justify-content: space-around;
+            margin:0 auto;
+            padding:10px 0;
+            .img{
+                img{width:100px;}
+            }
+        }
+        .v1{
+            background: linear-gradient(to right, rgba(97, 213, 242, 0.448) 0%, rgba(135, 251, 214, 0.682) 75%);
+        }
+        .v2{
+            background: linear-gradient(to right, rgba(242, 155, 97, 0.448) 0%, rgba(218, 251, 135, 0.682) 75%);
+        }
+        .v3{
+            background: linear-gradient(to right, rgba(199, 97, 242, 0.448) 0%, rgba(251, 135, 203, 0.682) 75%);
+        }
+    }
+}

@@ -79,9 +79,6 @@
 }
 
 @media (min-width: 1000px) {
-  #header {
-    background-color: red;
-  }
   #header #div-cabecalho main {
     padding: 0 50px;
   }
@@ -193,7 +190,7 @@
 }
 #header #cabecalho {
   height: 98px;
-  background-color: #3b53a3;
+  background: linear-gradient(to right, rgb(97, 102, 242) 0%, rgb(135, 210, 251) 75%);
 }
 #header #cabecalho #logo-header {
   transition-duration: 0.8s;
@@ -605,7 +602,7 @@ body {
   transition-duration: 0.5s;
 }
 #main .marcas .conteiner .c1 div:hover, #main .marcas .conteiner .c2 div:hover, #main .marcas .conteiner .c3 div:hover, #main .marcas .conteiner .c4 div:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 #main .marcas .conteiner .c1 div img, #main .marcas .conteiner .c2 div img, #main .marcas .conteiner .c3 div img, #main .marcas .conteiner .c4 div img {
   width: 100%;
