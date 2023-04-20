@@ -198,10 +198,14 @@ function redirect_imagens_evento(dado){
 }
 function redirect_4(dado){
     if(dado == true){
+        div_imagens[2].classList.add('redirect4');
+        div_imagens[4].classList.add('redirect4');
         div_imagens[6].classList.add('redirect4');
         div_imagens[7].classList.add('redirect4_2');
         div_imagens[8].classList.add('redirect4_2');
     }else{
+        div_imagens[2].classList.remove('redirect4');
+        div_imagens[4].classList.remove('redirect4');
         div_imagens[6].classList.remove('redirect4');
         div_imagens[7].classList.remove('redirect4_2');
         div_imagens[8].classList.remove('redirect4_2');

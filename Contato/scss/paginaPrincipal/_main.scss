@@ -2,8 +2,8 @@
     #main{
         .apresentacao{
             display:flex;
-        justify-content: space-between;
-        padding:0 15px;
+            justify-content: space-between;
+            padding:0 15px;
         }
     }
 }
@@ -13,16 +13,19 @@
             flex-direction: column;
             .texto{
                 .container_beneficios{
-                    margin-top:20px;
-                    display:grid;
-                    align-items: center;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr 1fr;
-                    .beneficios{
-                        // border:1px solid black;
-                    }
+                    margin-top:30px;
                     *{
                         text-align: center;
+                    }
+                }
+            }
+            .img{
+                width:100% !important;
+                a{
+                    width:100%;
+                    max-width: 648px;
+                    img{
+                        width: 100% !important;
                     }
                 }
             }
@@ -43,28 +46,40 @@
             }
         }
     }
-
+}
+@media(max-width: 561px){
+    #main{
+        .apresentacao{
+            .img{
+                max-width: 344px;
+                margin:0 auto;
+            }
+        }
+    }
 }
 #main{
     overflow: hidden;
     .apresentacao{
+        margin-bottom: 20px;
         .texto{
             .titulo{
                 *{
                     text-align: center;
                 }
                 h1{
-                    margin:20px 0px;
-                }
-                p{
-
+                    margin:20px 0px 0px 0px;
                 }
             }
             .container_beneficios{
                 display: flex;
                 flex-direction: column;
-                gap:20px;
+                // gap:20px;
                 .beneficios{
+                    padding-top:10px;
+                    padding-bottom:10px;
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.205);
+                    }
                     h2{
                         font-size: 1.2em;
                         &::before{
@@ -100,7 +115,21 @@
         h1{
             text-align: center;
         }
-        .links{}
+        .links{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            a{
+                img{
+                    transition-duration: 0.5s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
     }
 }
 #mini_wats{

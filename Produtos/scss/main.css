@@ -9,25 +9,25 @@
 }
 
 .btn_vermelo {
-  color: #eb2726;
+  color: #ef5c48;
 }
 .btn_vermelo:hover {
-  background-color: #eb2726;
-  border-color: #eb2726;
+  background-color: #ef5c48;
+  border-color: #ef5c48;
 }
 .btn_vermelo:focus {
-  box-shadow: 0 0 5px #eb2726;
+  box-shadow: 0 0 5px #ef5c48;
 }
 
 .btn_verde {
-  color: #46b763;
+  color: #49c48f;
 }
 .btn_verde:hover {
-  background-color: #46b763;
-  border-color: #46b763;
+  background-color: #49c48f;
+  border-color: #49c48f;
 }
 .btn_verde:focus {
-  box-shadow: 0 0 5px #46b763;
+  box-shadow: 0 0 5px #49c48f;
 }
 
 .btn_azul {
@@ -190,7 +190,7 @@
 }
 #header #cabecalho {
   height: 98px;
-  background: linear-gradient(to right, rgb(97, 102, 242) 0%, rgb(135, 210, 251) 75%);
+  background: linear-gradient(to right, #87d2fb 0%, #61bdf2 75%);
 }
 #header #cabecalho #logo-header {
   transition-duration: 0.8s;
@@ -291,43 +291,26 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
-  background-color: #f16923;
   overflow: hidden;
 }
 #main #header_main img {
   width: 120px;
 }
-#main footer {
-  width: 100%;
+#main .redes_sociais h1 {
+  text-align: center;
+}
+#main .redes_sociais .links {
+  padding: 20px 0px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  background-color: #3E3ABA;
-}
-#main footer * {
-  color: white;
-}
-#main footer div {
-  display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
 }
-#main footer div p {
-  font-size: 1.5em;
-  margin: 0;
+#main .redes_sociais .links a img {
+  transition-duration: 0.5s;
 }
-#main footer div a {
-  max-width: 30px !important;
-  height: 30px;
-}
-#main footer div a img {
-  width: 30px;
-  transition-duration: 0.8s;
-}
-#main footer div a img:hover {
-  width: 37px;
-  opacity: 0.7;
+#main .redes_sociais .links a img:hover {
+  transform: scale(1.1);
 }
 
 .wats {
@@ -621,8 +604,8 @@ body {
 }
 #main .msg_siga h1 {
   width: 80%;
-  border-top: 1px solid #eb2726;
-  border-bottom: 1px solid #eb2726;
+  border-top: 1px solid #ef5c48;
+  border-bottom: 1px solid #ef5c48;
   padding: 5px 0;
   font-size: 1.5em;
   text-align: center;
@@ -686,6 +669,7 @@ body {
 
 .redirect4 {
   width: 90% !important;
+  min-width: 120px;
 }
 
 .redirect4_2 {

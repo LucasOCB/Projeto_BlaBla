@@ -1,3 +1,8 @@
+@media(max-width: 576px){
+    #img_his5, #img_his6{
+        display:none;
+    }
+}
 @media(max-width: 770px){
     #main{
         .valores{
@@ -12,6 +17,7 @@
         }
     }
 }
+//576
 @media(min-width: 575px){
     #main{
         #container_avaliacao{
@@ -26,30 +32,35 @@
     }
 }
 #main{
-    .avaliacoes{
-        margin-top:15px;
-        .titulo{
-            h1{
-                text-align: center;
-            }
+    .titulo{
+        *{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            margin-top:15px;
         }
     }
-    #card_comentario{
-        #div_img_coment{
-            width: 100%;
-            background-image: url("../../../img/blabla/Guaxinim.png");
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            height:200px;
-        }
-        .card-body{
-            p{
-                text-align: center;
-                &::before, &::after{
-                    content: '"';
-                    padding:5px;
-                }
+    .avaliacoes{
+        // margin-top:15px;
+        #linha_avaliacoes{
+            .col{
+                .card_comentario{
+                    .card-body{
+                        p{
+                            text-align: center;
+                            &::before, &::after{
+                                content: '"';
+                                padding:5px;
+                            }
+                        }
+                    }
+                    .img{
+                        .imagem_his{
+                            width:100% !important;
+                        }
+                    }
+                }   
             }
         }
     }
@@ -60,23 +71,29 @@
             text-align: center;
 
         }
-        .v1, .v2, .v3{
+        .v2, .v3, .v1{
             display:flex;
             justify-content: space-around;
             margin:0 auto;
-            padding:10px 0;
+            padding:10px 0 10px 20px;
+            *{
+                color:white;
+            }
             .img{
                 img{width:100px;}
             }
+            .texto{
+                max-width:570px;
+            }
         }
         .v1{
-            background: linear-gradient(to right, rgba(97, 213, 242, 0.448) 0%, rgba(135, 251, 214, 0.682) 75%);
+            background: $verde;
         }
         .v2{
-            background: linear-gradient(to right, rgba(242, 155, 97, 0.448) 0%, rgba(218, 251, 135, 0.682) 75%);
+            background: $azul;
         }
         .v3{
-            background: linear-gradient(to right, rgba(199, 97, 242, 0.448) 0%, rgba(251, 135, 203, 0.682) 75%);
+            background: $vermelho;
         }
     }
 }
