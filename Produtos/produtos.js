@@ -5,8 +5,10 @@ var barra2 = document.getElementById('bm');
 var barra3 = document.getElementById('bb');
 var botoes = document.getElementById('botoes');
 var body = document.getElementById('body');
+
 var div_imagem_ativada = document.getElementById('div_imagem_ativada')
 var img_imagem_ativada = document.getElementById('img_imagem_ativada')
+
 var imagens_produtos = document.getElementById('imagens_produtos');
 var descricao = document.getElementById('descricao');
 const imagens = document.getElementsByClassName('img_img');
@@ -32,70 +34,70 @@ for(let x = 0; x < imagens.length; x++){
     })
 }
 const imgs_1_camisetas = [
-    "../img/produtos/camisetas/cami1.jpeg",
-    "../img/produtos/camisetas/cami2.jpeg",
-    "../img/produtos/camisetas/cami3.jpeg",
-    "../img/produtos/camisetas/cami4.jpeg",
-    "../img/produtos/camisetas/cami5.jpeg",
-    "../img/produtos/camisetas/cami6.jpeg",
-    "../img/produtos/camisetas/cami7.jpeg",
-    "../img/produtos/camisetas/cami8.jpeg",
-    "../img/produtos/camisetas/cami9.jpeg"
+    "../img/produtos/camisetas/cami1.png",
+    "../img/produtos/camisetas/cami3.png",
+    "../img/produtos/camisetas/cami2.png",
+    "../img/produtos/camisetas/cami4.png",
+    "../img/produtos/camisetas/cami5.png",
+    "../img/produtos/camisetas/cami6.png",
+    "../img/produtos/camisetas/cami7.png",
+    "../img/produtos/camisetas/cami8.png",
+    "../img/produtos/camisetas/cami9.png"
 ];
 const imgs_2_bermudas = [
-    "../img/produtos/bermudas/berm1.jpeg",
-    "../img/produtos/bermudas/berm2.jpeg",
-    "../img/produtos/bermudas/berm3.jpeg",
-    "../img/produtos/bermudas/berm4.jpeg",
-    "../img/produtos/bermudas/berm5.jpeg",
-    "../img/produtos/bermudas/berm6.jpeg",
-    "../img/produtos/bermudas/berm7.jpeg",
-    "../img/produtos/bermudas/berm8.jpeg",
-    "../img/produtos/bermudas/berm9.jpeg"
+    "../img/produtos/bermudas/berm1.png",
+    "../img/produtos/bermudas/berm2.png",
+    "../img/produtos/bermudas/berm3.png",
+    "../img/produtos/bermudas/berm4.png",
+    "../img/produtos/bermudas/berm5.png",
+    "../img/produtos/bermudas/berm6.png",
+    "../img/produtos/bermudas/berm7.png",
+    "../img/produtos/bermudas/berm8.png",
+    "../img/produtos/bermudas/berm9.png"
 ];
 const imgs_3_conjuntos = [
-    "../img/produtos/conjuntos/conj1.jpeg",
-    "../img/produtos/conjuntos/conj2.jpeg",
-    "../img/produtos/conjuntos/conj3.jpeg",
-    "../img/produtos/conjuntos/conj4.jpeg",
-    "../img/produtos/conjuntos/conj5.jpeg",
-    "../img/produtos/conjuntos/conj6.jpeg",
-    "../img/produtos/conjuntos/conj7.jpeg",
-    "../img/produtos/conjuntos/conj8.jpeg",
-    "../img/produtos/conjuntos/conj9.jpeg"
+    "../img/produtos/conjuntos/conj4.png",
+    "../img/produtos/conjuntos/conj5.png",
+    "../img/produtos/conjuntos/conj6.png",
+    "../img/produtos/conjuntos/conj1.png",
+    "../img/produtos/conjuntos/conj2.png",
+    "../img/produtos/conjuntos/conj3.png",
+    "../img/produtos/conjuntos/conj7.png",
+    "../img/produtos/conjuntos/conj8.png",
+    "../img/produtos/conjuntos/conj9.png"
 ];
 const imgs_4_vestidos = [
-    "../img/produtos/vestidos/ves1.jpeg",
-    "../img/produtos/vestidos/ves2.jpeg",
-    "../img/produtos/vestidos/ves3.jpeg",
-    "../img/produtos/vestidos/ves4.jpeg",
-    "../img/produtos/vestidos/ves5.jpeg",
-    "../img/produtos/vestidos/ves6.jpeg",
-    "../img/produtos/vestidos/ves7.jpeg",
-    "../img/produtos/vestidos/ves8.jpeg",
-    "../img/produtos/vestidos/ves9.jpeg"
+    "../img/produtos/vestidos/ves1.png",
+    "../img/produtos/vestidos/ves2.png",
+    "../img/produtos/vestidos/ves3.png",
+    "../img/produtos/vestidos/ves4.png",
+    "../img/produtos/vestidos/ves5.png",
+    "../img/produtos/vestidos/ves6.png",
+    "../img/produtos/vestidos/ves7.png",
+    "../img/produtos/vestidos/ves8.png",
+    "../img/produtos/vestidos/ves9.png"
 ];
 const imgs_5_calcas = [
-    "../img/produtos/calcas/cal1.jpeg",
-    "../img/produtos/calcas/cal2.jpeg",
-    "../img/produtos/calcas/cal3.jpeg",
-    "../img/produtos/calcas/cal4.jpeg",
-    "../img/produtos/calcas/cal5.jpeg",
-    "../img/produtos/calcas/cal6.jpeg",
-    "../img/produtos/calcas/cal7.jpeg",
-    "../img/produtos/calcas/cal8.jpeg",
-    "../img/produtos/calcas/cal9.jpeg"
+    "../img/produtos/calcas/cal2.png",
+    "../img/produtos/calcas/cal1.png",
+    "../img/produtos/calcas/cal3.png",
+    "../img/produtos/calcas/cal4.png",
+    "../img/produtos/calcas/cal6.png",
+    "../img/produtos/calcas/cal5.png",
+    "../img/produtos/calcas/cal8.png",
+    "../img/produtos/calcas/cal7.png",
+    "../img/produtos/calcas/cal9.png"
 ];
 const imgs_6_bebes = [
-    "../img/produtos/bebe/bebe1.jpeg",
-    "../img/produtos/bebe/bebe2.jpeg",
-    "../img/produtos/bebe/bebe3.jpeg",
-    "../img/produtos/bebe/bebe4.jpeg",
-    "../img/produtos/bebe/bebe5.jpeg",
-    "../img/produtos/bebe/bebe6.jpeg",
-    "../img/produtos/bebe/bebe7.jpeg",
-    "../img/produtos/bebe/bebe8.jpeg",
-    "../img/produtos/bebe/bebe9.jpeg"
+    "../img/produtos/bebe/bebe2.png",
+    "../img/produtos/bebe/bebe1.png",
+    "../img/produtos/bebe/bebe3.png",
+    "../img/produtos/bebe/bebe4.png",
+    "../img/produtos/bebe/bebe8.png",
+    "../img/produtos/bebe/bebe5.png",
+    "../img/produtos/bebe/bebe7.png",
+    "../img/produtos/bebe/bebe6.png",
+    "../img/produtos/bebe/bebe9.png"
 ];
 const imgs_7_acessorios = [
     "../img/produtos/acessorios/1",
@@ -119,9 +121,7 @@ const imgs_8_pijamas = [
     "../img/produtos/pijamas/8",
     "../img/produtos/pijamas/9"
 ]
-
 const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bebes, imgs_7_acessorios, imgs_8_pijamas]
-
 function trocar(dado){
     contador += 1;
     if(dado == 2 && contador%2 == 1){
@@ -198,16 +198,31 @@ function redirect_imagens_evento(dado){
 }
 function redirect_4(dado){
     if(dado == true){
-        div_imagens[2].classList.add('redirect4');
-        div_imagens[4].classList.add('redirect4');
-        div_imagens[6].classList.add('redirect4');
+        div_imagens[0].classList.add('redirect4_2_1');
+        div_imagens[3].classList.add('redirect4_2_4');
+        div_imagens[4].classList.add('redirect4_2_5');
+        div_imagens[5].classList.add('redirect4_2_6');
+        div_imagens[6].classList.add('redirect4_2');
         div_imagens[7].classList.add('redirect4_2');
         div_imagens[8].classList.add('redirect4_2');
     }else{
-        div_imagens[2].classList.remove('redirect4');
-        div_imagens[4].classList.remove('redirect4');
-        div_imagens[6].classList.remove('redirect4');
+        div_imagens[0].classList.remove('redirect4_2_1');
+        div_imagens[3].classList.remove('redirect4_2_4');
+        div_imagens[4].classList.remove('redirect4_2_5');
+        div_imagens[5].classList.remove('redirect4_2_6');
+        div_imagens[6].classList.remove('redirect4_2');
         div_imagens[7].classList.remove('redirect4_2');
         div_imagens[8].classList.remove('redirect4_2');
     }
 }
+img_imagem_ativada.addEventListener("mousemove", (d) => {
+    const eixo_x = d.clientX - d.target.offsetLeft;
+    const eixo_y = d.clientY - d.target.offsetTop;
+    
+    img_imagem_ativada.style.transformOrigin = `${eixo_x}px ${eixo_y}px`;
+    img_imagem_ativada.style.transform = "scale(1.5)";
+})
+img_imagem_ativada.addEventListener("mouseleave", (d) => {
+    img_imagem_ativada.style.transformOrigin = `center center`;
+    img_imagem_ativada.style.transform = "scale(1)";
+})

@@ -84,7 +84,6 @@
                 gap:3%;
                 padding:0 6%;
                 .imagem{
-                    width:10%;
                     img{
                         max-width:220px;
                     }
@@ -109,24 +108,31 @@
             }
         }
         .imagens{
+            overflow-x: auto !important;
+            height:350px;
+            .seta1, .seta2{
+                display: none !important;
+            }
             #carrocel{
-                // gap:10px;
-                padding:0 30px;
+                padding:0 30px 30px 30px;
                 .imagem{
-                    width:10%;
                     img{
                         max-width:160px;
+                        max-height: 100%;
                     }
                 }
             }
         }
+        .links{
+            padding: 0px 0px 40px 0px !important;
+        }
     }
    
 }
-
 //geral
 #main{
     .logo{
+
         width:100%;
         height:300px;
         overflow: none;
@@ -179,7 +185,7 @@
     }
     .imagens{
         overflow: hidden;
-        height:250px;
+        height:350px;
         max-width:100%;
         margin:10px 0;
         // background-color:$verde;
@@ -217,7 +223,6 @@
         .carrocel{
             width:332%;
             height:90%;
-            // background-color: $azul;
             display:flex;
             align-items: center;
             position: relative;
@@ -226,11 +231,15 @@
             .imagem{
                 display:flex;
                 justify-content: center;
+                img{
+                    border: 1px solid rgb(255, 183, 82);
+                }
             }
         }
     }
     .links{
         padding:40px 0;
+        background-color: rgb(231, 231, 231);
         .flex{
             display: flex;
             justify-content: space-evenly;
@@ -283,14 +292,9 @@
                     .divisoria{
                         .msg{
                             h1{
-                                text-align: end;
-                                width:100px;
                                 padding:10px;
                                 float: right;
                             }
-                        }
-                        .img{
-                            justify-content: start;
                         }
                     }
                 }
@@ -318,7 +322,9 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-
+.reset_carrosel{
+    display: none !important;
+}
 
 @keyframes guaxinim{
     from{

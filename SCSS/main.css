@@ -156,7 +156,7 @@
   }
   #alvo .nav-lista {
     width: 100%;
-    border: 1px solid rgb(28, 255, 255);
+    border: 1px solid #ffb752;
   }
   #alvo .nav-lista button {
     padding-left: 16px;
@@ -165,7 +165,7 @@
   }
   #alvo .nav-lista .cor:hover {
     color: white;
-    background-color: #3b53a3;
+    background-color: #87d2fb;
   }
   #alvo .nav-lista .cor:hover font {
     color: white;
@@ -197,6 +197,9 @@
 }
 #header #cabecalho #logo-header:hover {
   width: 160px !important;
+}
+#header #cabecalho .nav-pills .nav-link {
+  border-radius: 0px !important;
 }
 #header #cabecalho .nav-pills .nav-lista li a font {
   color: #414f64;
@@ -296,11 +299,15 @@
 #main #header_main img {
   width: 120px;
 }
+#main .redes_sociais {
+  background-color: white;
+}
 #main .redes_sociais h1 {
   text-align: center;
 }
 #main .redes_sociais .links {
-  padding: 20px 0px;
+  background-color: white;
+  padding: 10px 0 20px 0px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -430,9 +437,6 @@ body {
     gap: 3%;
     padding: 0 6%;
   }
-  #main .imagens #carrocel .imagem {
-    width: 10%;
-  }
   #main .imagens #carrocel .imagem img {
     max-width: 220px;
   }
@@ -444,14 +448,22 @@ body {
   #main .logo .frase p {
     left: 20px;
   }
-  #main .imagens #carrocel {
-    padding: 0 30px;
+  #main .imagens {
+    overflow-x: auto !important;
+    height: 350px;
   }
-  #main .imagens #carrocel .imagem {
-    width: 10%;
+  #main .imagens .seta1, #main .imagens .seta2 {
+    display: none !important;
+  }
+  #main .imagens #carrocel {
+    padding: 0 30px 30px 30px;
   }
   #main .imagens #carrocel .imagem img {
     max-width: 160px;
+    max-height: 100%;
+  }
+  #main .links {
+    padding: 0px 0px 40px 0px !important;
   }
 }
 #main .logo {
@@ -505,7 +517,7 @@ body {
 }
 #main .imagens {
   overflow: hidden;
-  height: 250px;
+  height: 350px;
   max-width: 100%;
   margin: 10px 0;
   position: relative;
@@ -549,8 +561,12 @@ body {
   display: flex;
   justify-content: center;
 }
+#main .imagens .carrocel .imagem img {
+  border: 1px solid rgb(255, 183, 82);
+}
 #main .links {
   padding: 40px 0;
+  background-color: rgb(231, 231, 231);
 }
 #main .links .flex {
   display: flex;
@@ -597,13 +613,8 @@ body {
   transform: scale(1.04);
 }
 #main .links .flex .link:nth-child(1) .divisoria .msg h1 {
-  text-align: end;
-  width: 100px;
   padding: 10px;
   float: right;
-}
-#main .links .flex .link:nth-child(1) .divisoria .img {
-  justify-content: start;
 }
 
 .setaSumir {
@@ -623,6 +634,10 @@ body {
   animation-name: guaxinim;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+
+.reset_carrosel {
+  display: none !important;
 }
 
 @keyframes guaxinim {

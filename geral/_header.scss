@@ -91,7 +91,7 @@
     #alvo{
         .nav-lista{
             width:100%;
-            border:1px solid rgb(28, 255, 255);
+            border:1px solid #ffb752;
             button{
                 padding-left: 16px;
                 padding-right:100%; 
@@ -99,7 +99,7 @@
             }
             .cor:hover{
                 color:white;
-                background-color:$azul;
+                background-color: #87d2fb;
                 font{
                     color:white;
                 }
@@ -140,6 +140,9 @@
             }
         }
         .nav-pills{
+            .nav-link{
+                border-radius: 0px !important;
+            }
             .nav-lista{
                 li{
                     a{

@@ -156,7 +156,7 @@
   }
   #alvo .nav-lista {
     width: 100%;
-    border: 1px solid rgb(28, 255, 255);
+    border: 1px solid #ffb752;
   }
   #alvo .nav-lista button {
     padding-left: 16px;
@@ -165,7 +165,7 @@
   }
   #alvo .nav-lista .cor:hover {
     color: white;
-    background-color: #3b53a3;
+    background-color: #87d2fb;
   }
   #alvo .nav-lista .cor:hover font {
     color: white;
@@ -197,6 +197,9 @@
 }
 #header #cabecalho #logo-header:hover {
   width: 160px !important;
+}
+#header #cabecalho .nav-pills .nav-link {
+  border-radius: 0px !important;
 }
 #header #cabecalho .nav-pills .nav-lista li a font {
   color: #414f64;
@@ -296,11 +299,15 @@
 #main #header_main img {
   width: 120px;
 }
+#main .redes_sociais {
+  background-color: white;
+}
 #main .redes_sociais h1 {
   text-align: center;
 }
 #main .redes_sociais .links {
-  padding: 20px 0px;
+  background-color: white;
+  padding: 10px 0 20px 0px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -387,6 +394,9 @@ body {
     justify-content: space-between;
     padding: 0 15px;
   }
+  #main .apresentacao .texto .container_beneficios p {
+    max-width: 900px;
+  }
 }
 @media (max-width: 1130px) {
   #main .apresentacao {
@@ -399,14 +409,11 @@ body {
     text-align: center;
   }
   #main .apresentacao .img {
-    width: 100% !important;
-  }
-  #main .apresentacao .img a {
-    width: 100%;
-    max-width: 648px;
+    display: flex;
+    justify-content: end;
   }
   #main .apresentacao .img a img {
-    width: 100% !important;
+    margin-right: 5%;
   }
 }
 @media (max-width: 760px) {
@@ -456,18 +463,11 @@ body {
   content: "+";
   margin-right: 5px;
 }
-#main .apresentacao .texto .container_beneficios .beneficios p {
-  max-width: 900px;
-}
 #main .apresentacao .img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("../../../img/blabla/fundo_azul.png");
   padding-left: 5px;
 }
 #main .apresentacao .img a #imagem_fundo {
-  width: 344px;
-  height: 493px;
   transition-duration: 0.4s;
 }
 #main .apresentacao .img a #imagem_fundo:hover {
@@ -500,9 +500,4 @@ body {
 }
 * {
   font-family: "blabla";
-}
-
-body {
-  min-height: 300px;
-  background-color: red;
 }/*# sourceMappingURL=main.css.map */

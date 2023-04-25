@@ -156,7 +156,7 @@
   }
   #alvo .nav-lista {
     width: 100%;
-    border: 1px solid rgb(28, 255, 255);
+    border: 1px solid #ffb752;
   }
   #alvo .nav-lista button {
     padding-left: 16px;
@@ -165,7 +165,7 @@
   }
   #alvo .nav-lista .cor:hover {
     color: white;
-    background-color: #3b53a3;
+    background-color: #87d2fb;
   }
   #alvo .nav-lista .cor:hover font {
     color: white;
@@ -197,6 +197,9 @@
 }
 #header #cabecalho #logo-header:hover {
   width: 160px !important;
+}
+#header #cabecalho .nav-pills .nav-link {
+  border-radius: 0px !important;
 }
 #header #cabecalho .nav-pills .nav-lista li a font {
   color: #414f64;
@@ -296,11 +299,15 @@
 #main #header_main img {
   width: 120px;
 }
+#main .redes_sociais {
+  background-color: white;
+}
 #main .redes_sociais h1 {
   text-align: center;
 }
 #main .redes_sociais .links {
-  padding: 20px 0px;
+  background-color: white;
+  padding: 10px 0 20px 0px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -445,9 +452,6 @@ body {
     flex-direction: column;
     width: 100%;
   }
-  #main .imagens_produtos .container_grid .container_1, #main .imagens_produtos .container_grid .container_2, #main .imagens_produtos .container_grid .container_3 {
-    display: flex;
-  }
 }
 @media (min-width: 571px) {
   .fixar_botoes {
@@ -469,13 +473,24 @@ body {
     max-width: 400px;
   }
   .msg_siga {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
   }
   .marcas .conteiner .c1 div, .marcas .conteiner .c2 div, .marcas .conteiner .c3 div {
     width: 20% !important;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 670px) {
+  #main .imagens_produtos .container_grid {
+    grid-column: 1;
+  }
+  #main .imagens_produtos .container_grid .container_1, #main .imagens_produtos .container_grid .container_2, #main .imagens_produtos .container_grid .container_3 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #main .imagens_produtos .container_grid .container_1 .img, #main .imagens_produtos .container_grid .container_2 .img, #main .imagens_produtos .container_grid .container_3 .img {
+    width: 80%;
+    margin: 0 auto;
+  }
   .botoes {
     display: block !important;
     overflow: auto;
@@ -551,13 +566,16 @@ body {
   margin: 0 auto;
   display: grid;
 }
+#main .imagens_produtos .container_grid .container_1, #main .imagens_produtos .container_grid .container_2, #main .imagens_produtos .container_grid .container_3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 #main .imagens_produtos .container_grid .img {
   max-height: 100%;
 }
 #main .imagens_produtos .container_grid .img img {
   width: 100%;
-  background-clip: border-box;
-  box-shadow: 1px 1px 10px black;
+  border: 1px solid #ffb752;
 }
 #main .marcas {
   width: 100%;
@@ -582,10 +600,6 @@ body {
 }
 #main .marcas .conteiner .c1 div, #main .marcas .conteiner .c2 div, #main .marcas .conteiner .c3 div, #main .marcas .conteiner .c4 div {
   width: 15%;
-  transition-duration: 0.5s;
-}
-#main .marcas .conteiner .c1 div:hover, #main .marcas .conteiner .c2 div:hover, #main .marcas .conteiner .c3 div:hover, #main .marcas .conteiner .c4 div:hover {
-  transform: scale(1.1);
 }
 #main .marcas .conteiner .c1 div img, #main .marcas .conteiner .c2 div img, #main .marcas .conteiner .c3 div img, #main .marcas .conteiner .c4 div img {
   width: 100%;
@@ -596,7 +610,7 @@ body {
   background-color: black;
 }
 #main .msg_siga {
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -606,7 +620,7 @@ body {
   width: 80%;
   border-top: 1px solid #ef5c48;
   border-bottom: 1px solid #ef5c48;
-  padding: 5px 0;
+  padding: 5px 0 0 0;
   font-size: 1.5em;
   text-align: center;
 }
@@ -634,8 +648,8 @@ body {
   z-index: 999;
   filter: blur(0px) !important;
 }
-.foco_img img {
-  box-shadow: 1px 1px 10px black;
+.foco_img a img {
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -643,11 +657,8 @@ body {
   filter: blur(10px);
 }
 
-#img_imagem_ativada {
-  transition-duration: 0.7s !important;
-}
-#img_imagem_ativada:hover {
-  transform: scale(1.04);
+#div_imagem_ativada a {
+  overflow: hidden;
 }
 
 body {
@@ -665,15 +676,6 @@ body {
 
 .imagens_produtos {
   z-index: -99;
-}
-
-.redirect4 {
-  width: 90% !important;
-  min-width: 120px;
-}
-
-.redirect4_2 {
-  width: 105% !important;
 }
 
 @font-face {

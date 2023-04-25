@@ -4,6 +4,13 @@
             display:flex;
             justify-content: space-between;
             padding:0 15px;
+            .texto{
+                .container_beneficios{
+                    p{
+                        max-width: 900px;
+                    }
+                }
+            }
         }
     }
 }
@@ -20,12 +27,11 @@
                 }
             }
             .img{
-                width:100% !important;
+                display: flex;
+                justify-content: end;
                 a{
-                    width:100%;
-                    max-width: 648px;
                     img{
-                        width: 100% !important;
+                        margin-right:5%;
                     }
                 }
             }
@@ -73,7 +79,6 @@
             .container_beneficios{
                 display: flex;
                 flex-direction: column;
-                // gap:20px;
                 .beneficios{
                     padding-top:10px;
                     padding-bottom:10px;
@@ -87,22 +92,16 @@
                             margin-right:5px;
                         }
                     }
-                    p{
-                        max-width:900px;
-                    }
                 }
             }
         }
         .img{
-            // overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-image: url('../../../img/blabla/fundo_azul.png');
             padding-left:5px;
             a{
                 #imagem_fundo{
-                    width:344px;
-                    height:493px;
+                    // width:344px;
+                    // height:493px;
                     transition-duration: 0.4s;
                     &:hover{
                         transform: scale(1.02);

@@ -73,11 +73,13 @@
         overflow: hidden;
     }
     .redes_sociais{
+        background-color: white;
         h1{
             text-align: center;
         }
         .links{
-            padding: 20px 0px;
+            background-color: white;
+            padding: 10px 0 20px 0px ;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;

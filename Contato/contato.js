@@ -6,22 +6,22 @@ var barra3 = document.getElementById('bb');
 var contador = 0; 
 var largura_pagina = document.documentElement.clientWidth;
 var imagem_celular_element = document.getElementById("imagem_fundo")
-window.addEventListener('resize', () => {
-    largura_pagina = document.documentElement.clientWidth;
-    mudarImagem_cell(largura_pagina);
-})
-mudarImagem_cell(largura_pagina);
-function mudarImagem_cell(largura){
-    //../img/blabla/loja_celular.jpeg
-    //../img/blabla/loja_celular_grande.png
-    if(largura > 1113){
-        imagem_celular_element.setAttribute("src", "../img/blabla/loja_celular.jpeg")
-    }else if(largura < 1113 && largura > 543){
-        imagem_celular_element.setAttribute("src", "../img/blabla/loja_celular_grande.png")
-    }else{
-        imagem_celular_element.setAttribute("src", "../img/blabla/loja_celular.jpeg")
-    }
-}
+// window.addEventListener('resize', () => {
+//     largura_pagina = document.documentElement.clientWidth;
+//     mudarImagem_cell(largura_pagina);
+// })
+// mudarImagem_cell(largura_pagina);
+// function mudarImagem_cell(largura){
+//     //../img/blabla/loja_celular.jpeg
+//     //../img/blabla/loja_celular_grande.png
+//     if(largura > 1130){
+//         imagem_celular_element.setAttribute("src", "../img/blabla/loja_celular.jpeg")
+//     }else if(largura < 1130 && largura > 543){
+//         imagem_celular_element.setAttribute("src", "../img/blabla/loja_celular_grande.png")
+//     }else{
+//         imagem_celular_element.setAttribute("src", "../img/blabla/loja_celular.jpeg")
+//     }
+// }
 
 function trocar(dado){
     contador += 1;

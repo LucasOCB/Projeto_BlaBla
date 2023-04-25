@@ -156,7 +156,7 @@
   }
   #alvo .nav-lista {
     width: 100%;
-    border: 1px solid rgb(28, 255, 255);
+    border: 1px solid #ffb752;
   }
   #alvo .nav-lista button {
     padding-left: 16px;
@@ -165,7 +165,7 @@
   }
   #alvo .nav-lista .cor:hover {
     color: white;
-    background-color: #3b53a3;
+    background-color: #87d2fb;
   }
   #alvo .nav-lista .cor:hover font {
     color: white;
@@ -197,6 +197,9 @@
 }
 #header #cabecalho #logo-header:hover {
   width: 160px !important;
+}
+#header #cabecalho .nav-pills .nav-link {
+  border-radius: 0px !important;
 }
 #header #cabecalho .nav-pills .nav-lista li a font {
   color: #414f64;
@@ -296,11 +299,15 @@
 #main #header_main img {
   width: 120px;
 }
+#main .redes_sociais {
+  background-color: white;
+}
 #main .redes_sociais h1 {
   text-align: center;
 }
 #main .redes_sociais .links {
-  padding: 20px 0px;
+  background-color: white;
+  padding: 10px 0 20px 0px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -401,12 +408,21 @@ body {
     margin: 16px auto 0 auto;
   }
 }
+#main .titulo {
+  padding-top: 35px;
+}
 #main .titulo * {
   text-align: center;
 }
 #main .titulo h1 {
   text-align: center;
-  margin-top: 15px;
+}
+#main .avaliacoes {
+  margin-bottom: 15px;
+}
+#main .avaliacoes .titulo_2 h1 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 #main .avaliacoes #linha_avaliacoes .col .card_comentario .card-body p {
   text-align: center;
@@ -420,10 +436,10 @@ body {
 }
 #main .valores {
   width: 100%;
-  padding: 0 10px;
 }
 #main .valores .h1 {
   text-align: center;
+  padding-top: 20PX;
 }
 #main .valores .v2, #main .valores .v3, #main .valores .v1 {
   display: flex;
