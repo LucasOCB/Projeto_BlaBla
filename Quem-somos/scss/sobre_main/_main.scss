@@ -1,7 +1,4 @@
 @media(max-width: 576px){
-    #img_his5, #img_his6{
-        display:none;
-    }
 }
 @media(max-width: 770px){
     #main{
@@ -18,17 +15,6 @@
     }
 }
 @media(min-width: 575px){
-    #main{
-        #container_avaliacao{
-            #linha_avaliacoes{
-                .col{
-                    &:nth-child(3){
-                        margin:16px auto 0 auto;
-                    }
-                }
-            }
-        }
-    }
 }
 #main{
     .titulo{
@@ -38,35 +24,6 @@
         }
         h1{
             text-align: center;
-        }
-    }
-    .avaliacoes{
-        margin-bottom:15px;
-        .titulo_2{
-            h1{
-                text-align: center;
-                margin-bottom: 30px;
-            }
-        }
-        #linha_avaliacoes{
-            .col{
-                .card_comentario{
-                    .card-body{
-                        p{
-                            text-align: center;
-                            &::before, &::after{
-                                content: '"';
-                                padding:5px;
-                            }
-                        }
-                    }
-                    .img{
-                        .imagem_his{
-                            width:100% !important;
-                        }
-                    }
-                }   
-            }
         }
     }
     .valores{
@@ -98,6 +55,21 @@
         }
         .v3{
             background: $vermelho;
+        }
+    }
+    .apresentacao{
+        .texto{
+            .container_beneficios{
+                .beneficios{
+                    padding:10px 0;
+                    *{
+                        text-align: center;
+                    }
+                    h2{
+                        font-size: 1.5em;
+                    }
+                }
+            }
         }
     }
 }

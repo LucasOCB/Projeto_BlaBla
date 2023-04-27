@@ -29,7 +29,7 @@
         <ul class="nav nav-pills n_aparecer" id="alvo">
           <div class="nav-lista">
               <li class="nav-item"><a href="Quem-somos/Sobre.html" class="nav-link cor">
-                  <font style="vertical-align: inherit;">Sobre nós</font></a>
+                  <font style="vertical-align: inherit;">Quem somos</font></a>
               </li>
           </div>
           <div class="nav-lista">
@@ -47,38 +47,71 @@
     </div>
   </header>
   <main id="main" onclick="trocar(2)" onclick="mudarBotao(2)">
-    <div class="logo">
-      <div class="conteiner">
-        <img src="img/blabla/Guaxinim.png" alt="Guaxinim-BlaBlaKidsstore">
-      </div>
-      <div class="frase">
-        <p>LOOKINHOS PARA TODOS</p>
+    <div id="carrocel_header">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" class="seta_carrocel"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="seta_carrocel"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="seta_carrocel"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <div class="descricao">
-      <div>
-        <p>Conheça a mais nova loja de roupas infantil e juvenil </p>
-        <a href="Quem-somos/Sobre.html"><button type="button" class="btn btn-outline-secondary">Saiba mais sobre nós</button></a>
+    <div id="carrocel_servicos">
+      <div class="conteiner">
+          <div class="painel">
+            <div class="elemento">
+              <img src="" alt="">
+            </div>
+            <div class="elemento">
+              <img src="" alt="">
+            </div>
+            <div class="elemento">
+              <img src="" alt="">
+            </div>
+            <div class="elemento">
+              <img src="" alt="">
+            </div>
+          </div>
       </div>
     </div>
     <div class="imagens">
-      <div class="seta1" id="seta1">
-        <img src="img/formas/icons8-seta-longa-à-esquerda-48.png" alt="">
-      </div>
-      <div class="carrocel" id="carrocel" style=" right:0;">
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/conjuntos/conj2.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/bermudas/berm3.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/camisetas/cami6.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/vestidos/ves6.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/bebe/bebe7.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/conjuntos/conj5.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/bebe/bebe8.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/produtos/calcas/cal3.png" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/roupas/panda.webp" alt=""></a></div>
-        <div class="imagem"><a href="Produtos/Produtos.html"><img src="img/roupas/panda.webp" alt=""></a></div>
-      </div>
-      <div class="seta2" id="seta2">
-        <img src="img/formas/icons8-seta-longa-à-direita-48.png" alt="">
+      <div class="conteiner">
+        <div class="l1">
+          <div class="img">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="l2">
+          <div class="imgs">
+              <div class="bloco1">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+              <div class="bloco2">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="links">
@@ -123,9 +156,6 @@
         </a>
         <a href="https://web.facebook.com/blablakidsstore" target="_blank">
           <img src="img/links/facebbok_fundo_colors.png" alt="">
-        </a>
-        <a href="https://web.whatsapp.com/send?phone=5511993665995" target="_blank">
-          <img src="img/links/icons8-whatsapp-colors.png" alt="">
         </a>
       </div>
     </div>

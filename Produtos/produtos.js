@@ -166,7 +166,7 @@ window.addEventListener("scroll", () => {
     fixar_botoes(posicao_Objeto.bottom)
 })
 function fixar_botoes(dado1){
-    if(dado1 < 97.5){
+    if(dado1 < 117.5){
         botoes.classList.add('fixar_botoes');
         imagens_produtos.classList.add('padding_pos_fixo')
     }else{

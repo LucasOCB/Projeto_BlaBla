@@ -6,7 +6,7 @@
                 .img-logo{
                     a{
                         img{
-                            width:150px;
+                            width:220px;
                         }
                     }
                 }
@@ -39,8 +39,7 @@
             main{
                 align-items: center;
                 .img-logo{
-                    width:140px;
-                    height:100px;
+                    width:190px;
                     margin-left:20px;
                     a{
                         img{
@@ -131,12 +130,16 @@
     width:100%;
     top:0;
     #cabecalho{
-        height:98px;
+        height:128px;
         background: linear-gradient(to right, #87d2fb 0%, #61bdf2 75%);
+        .img-logo{
+            display: flex;
+            align-items: center;
+        }
         #logo-header{
             transition-duration: 0.8s;
             &:hover{
-                width:160px !important;
+                transform: scale(1.1);
             }
         }
         .nav-pills{
@@ -163,7 +166,7 @@
 
 //animações
 .aparecer{
-    top:110px !important;
+    top:128px !important;
     background-color:white;
 }
 .mbc{
