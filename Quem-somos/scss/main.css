@@ -401,14 +401,23 @@ body {
     text-align: center;
   }
 }
-#main .titulo {
+#main #titulo {
   padding-top: 35px;
 }
-#main .titulo * {
+#main #titulo h1 {
   text-align: center;
 }
-#main .titulo h1 {
-  text-align: center;
+#main #titulo p:nth-child(0), #main #titulo p:nth-child(2), #main #titulo p:nth-child(4), #main #titulo p:nth-child(6) {
+  width: 70%;
+  padding-right: 10%;
+  text-align: left;
+  margin: 15px auto 0 auto;
+}
+#main #titulo p:nth-child(1), #main #titulo p:nth-child(3), #main #titulo p:nth-child(5) {
+  width: 70%;
+  padding-left: 10%;
+  text-align: right;
+  margin: 15px auto 0 auto;
 }
 #main .valores {
   width: 100%;
@@ -421,7 +430,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 10px 0 10px 20px;
+  padding: 10px 0 10px 0px;
 }
 #main .valores .v2 *, #main .valores .v3 *, #main .valores .v1 * {
   color: white;
@@ -440,6 +449,13 @@ body {
 }
 #main .valores .v3 {
   background: #ef5c48;
+}
+#main .apresentacao .texto .titulo h1 {
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+#main .apresentacao .texto .titulo p {
+  text-align: center;
 }
 #main .apresentacao .texto .container_beneficios .beneficios {
   padding: 10px 0;

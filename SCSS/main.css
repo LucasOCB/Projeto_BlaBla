@@ -516,6 +516,7 @@ body {
 }
 #main .imagens .conteiner .l2 .imgs .bloco1, #main .imagens .conteiner .l2 .imgs .bloco2 {
   display: flex;
+  gap: 20px;
   background-color: rgb(0, 200, 255);
   width: 100%;
   height: 50%;
