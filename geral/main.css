@@ -87,6 +87,7 @@
   }
   #header #div-cabecalho main .nav-pills {
     gap: 20px;
+    transition-duration: 0s !important;
   }
   #header #div-cabecalho main .nav-pills .nav-lista {
     padding: 0;
@@ -124,7 +125,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    transition-duration: 0.2s;
+    transition-duration: 0.2s !important;
     top: -40px;
   }
   #header #div-cabecalho main .nav-pills button {
@@ -203,6 +204,9 @@
 }
 #header #cabecalho #logo-header:hover {
   transform: scale(1.1);
+}
+#header #cabecalho .nav-pills {
+  transition-duration: 0s;
 }
 #header #cabecalho .nav-pills .nav-link {
   border-radius: 0px !important;

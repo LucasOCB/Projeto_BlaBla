@@ -12,6 +12,7 @@
                 }
                 .nav-pills{
                     gap:20px;
+                    transition-duration: 0s !important;
                     .nav-lista{
                         padding:0;
                         display:flex;
@@ -54,7 +55,7 @@
                     flex-direction: column;
                     justify-content: start;
                     align-items: start;
-                    transition-duration: 0.2s;
+                    transition-duration: 0.2s !important;
                     top:-40px;
                     button{
                         padding:0;
@@ -146,6 +147,7 @@
             }
         }
         .nav-pills{
+            transition-duration: 0s;
             .nav-link{
                 border-radius: 0px !important;
             }
