@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     transition-duration: 0.6s;
-    background-color: white;
     border-radius:25px;
     z-index: 9999;
     div{
@@ -19,20 +18,44 @@
 }
 .img-animacao{
     animation-name: wats;
-    animation-duration: 5s;
-    animation-iteration-count: 2;
-    animation-delay: 4s;
-    animation-timing-function: linear;
-    transition-duration: 0.6s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 @keyframes wats{
-    20%{transform: rotate(0turn);}
-    40%{transform: Rotate(1turn);}
-    45%{
-        transform: Rotate(1turn);
-        width:52px;
+    4.5%, 10.5%{
+        transform: translate(0px, 0px) rotate(0deg);
     }
-    60%{width:67px;border-radius:40px;}
-    75%{width: 52px;}
-    100%{transform: Rotate(1turn);}
+    5%{
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    5.5%{
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    6%{
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    6.5%{
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    7%{
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    7.5%{
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    8%{
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    8.5%{
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    9%{
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    9.5%{
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    10%{
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }

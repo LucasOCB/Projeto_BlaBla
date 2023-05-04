@@ -17,14 +17,14 @@
 @media(min-width: 575px){
 }
 #main{
-    #titulo{
+    #informacao{
         padding-top:35px;
         h1{
             text-align: center;
         }
         p{
-
             &:nth-child(0), &:nth-child(2), &:nth-child(4), &:nth-child(6){
+                text-indent: 20px;
                 width:70%;
                 padding-right:10%;
                 text-align: left;
@@ -83,9 +83,16 @@
             }
             .container_beneficios{
                 .beneficios{
-                    padding:10px 0;
+                    padding:20px 0;
+                    &:hover{
+                        background-color: rgb(187, 187, 187);
+                    }
                     *{
                         text-align: center;
+                    }
+                    p{
+                        max-width:90%;
+                        margin: 0 auto;
                     }
                     h2{
                         font-size: 1.5em;

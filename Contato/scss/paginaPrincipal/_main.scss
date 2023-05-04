@@ -1,122 +1,27 @@
-@media(min-width: 1130px){
-    #main{
-        .apresentacao{
-            display:flex;
-            justify-content: space-between;
-            padding:0 15px;
-            .texto{
-                .container_beneficios{
-                    p{
-                        max-width: 900px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media(max-width: 1130px){
-    #main{
-        .apresentacao{
-            flex-direction: column;
-            .texto{
-                .container_beneficios{
-                    margin-top:30px;
-                    *{
-                        text-align: center;
-                    }
-                }
-            }
-            .img{
-                display: flex;
-                justify-content: end;
-                a{
-                    img{
-                        margin-right:5%;
-                    }
-                }
-            }
-        }
-    }
-}
-@media(max-width: 760px){
-    #main{
-        .apresentacao{
-            flex-direction: column;
-            .texto{
-                .container_beneficios{
-                    display:flex;
-                    *{
-                        text-align: center;
-                    }
-                }
-            }
-        }
-    }
-}
-@media(max-width: 561px){
-    #main{
-        .apresentacao{
-            .img{
-                max-width: 344px;
-                margin:0 auto;
-            }
-        }
-    }
-}
 #main{
-    overflow: hidden;
-    .apresentacao{
-        margin-bottom: 20px;
-        .texto{
-            .titulo{
+    width:80%;
+    margin:158px auto 0 auto;
+    .dados{}
+    .vendedora{
+        // background-image: url("../../../img/blabla/fundo_azul.png");
+        .caixa{
+            justify-content: center;
+            display:flex;
+            .texto{
+                width:70%;
+                p{
+                    font-family: sans-serif !important;
+                }
                 *{
                     text-align: center;
                 }
-                h1{
-                    margin:20px 0px 0px 0px;
-                }
             }
-            .container_beneficios{
-                display: flex;
-                flex-direction: column;
-                .beneficios{
-                    padding-top:10px;
-                    padding-bottom:10px;
-                    &:hover{
-                        background-color: rgba(0, 0, 0, 0.205);
-                    }
-                    h2{
-                        font-size: 1.2em;
-                        &::before{
-                            content: '+';
-                            margin-right:5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .redes_sociais{
-        h1{
-            text-align: center;
-        }
-        .links{
-            padding-top: 20px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            align-items: center;
-            a{
+            .img{
                 img{
-                    transition-duration: 0.5s;
-                    &:hover{
-                        transform: scale(1.1);
-                    }
+                    width:100%;
                 }
+                max-width:100px;
             }
         }
     }
-}
-#mini_wats{
-    display:inline !important;
 }
