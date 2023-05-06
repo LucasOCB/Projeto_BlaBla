@@ -2,8 +2,12 @@
 
 @font-face {
     font-family: 'blabla';
-    src: url('../../Fonte/blabla.otf');
+    src: url('../../Fonte/Omnes Bold/blabla.otf');
 }
 *{
     font-family: 'blabla';
+}
+
+body{
+    overflow-x: hidden;
 }

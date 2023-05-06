@@ -394,12 +394,7 @@
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-@font-face {
-  font-family: "blabla";
-  src: url("../Fonte/blabla.otf");
-}
 * {
-  font-family: "blabla";
   color: #414f64;
   margin: 0px;
   padding: 0px;
@@ -420,7 +415,7 @@ body {
 }
 @media (max-width: 1324px) {
   .padding_pos_fixo {
-    padding-top: 136px;
+    padding-top: 111px;
   }
 }
 @media (min-width: 766px) {
@@ -428,7 +423,7 @@ body {
     background-color: #f16923;
   }
   #main .botoes {
-    width: 80%;
+    padding: 20px 0;
   }
   #main .imagens_produtos {
     background-color: 0;
@@ -449,7 +444,7 @@ body {
     display: inline;
   }
   .fixar_botoes {
-    right: 10%;
+    width: 100%;
   }
 }
 @media (max-width: 765px) {
@@ -465,6 +460,7 @@ body {
   }
   #main .botoes {
     width: 100%;
+    padding: 15px 0;
   }
   #main .botoes .conteiner_cell {
     width: 100%;
@@ -527,6 +523,16 @@ body {
     flex-wrap: nowrap !important;
     margin: 0 10px;
   }
+  .btn_imagem_desativar {
+    display: block !important;
+    position: absolute;
+    top: 2%;
+    right: 7%;
+    font-size: 3em;
+  }
+  .btn_imagem_desativar:hover {
+    cursor: pointer;
+  }
 }
 #main header, #main .descricao {
   margin: 0 auto;
@@ -572,7 +578,6 @@ body {
 #main .botoes {
   margin: 0 auto;
   transition-duration: 0.1s;
-  padding: 10px 0 20px 0;
   z-index: 9;
 }
 #main .botoes .conteiner_cell {
@@ -685,7 +690,7 @@ body {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 #header {
@@ -701,10 +706,18 @@ body {
   z-index: -99;
 }
 
+.btn_imagem_desativar {
+  display: none;
+}
+
 @font-face {
   font-family: "blabla";
-  src: url("../../Fonte/blabla.otf");
+  src: url("../../Fonte/Omnes Bold/blabla.otf");
 }
 * {
   font-family: "blabla";
+}
+
+body {
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,13 @@
 @import "../geral/main.scss",  "PaginaPrincipal/main";
 
+@font-face {
+    font-family: 'blabla';
+    src: url('../Fonte/Omnes Bold/blabla.otf');
+}
+*{
+    font-family: 'blabla';
+}
+
 a{
     text-decoration: none !important;
     transition-duration: 0.5s;

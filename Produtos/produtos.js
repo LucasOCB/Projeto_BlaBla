@@ -157,12 +157,6 @@ function mudar(dado){
 }
 window.addEventListener("scroll", () => {
     let posicao_Objeto = descricao.getBoundingClientRect();
-    let posicao_janela = {
-        superior: 0,
-        esquerda: 0,
-        inferior: window.innerHeight,
-        direita: window.innerWidth
-    }
     fixar_botoes(posicao_Objeto.bottom)
 })
 function fixar_botoes(dado1){
@@ -176,44 +170,18 @@ function fixar_botoes(dado1){
 }
 function mudar_imagens(numero){
     contador_tipoImagem = numero
-    redirect_imagens_evento(numero)
     for(let contador = 0; contador < imagens.length; contador++){
         imagens[contador].setAttribute("src", tipos_imagens[numero][contador]);
     }
 }
 function foco_imagem(){
+    console.log("funciono")
     div_imagem_ativada.classList.toggle('foco_img')
     div_imagem_ativada.classList.toggle('foco_img_desaparecer')
     img_imagem_ativada.setAttribute("src", tipos_imagens[contador_tipoImagem][contador_imagem_hover])
     header_blur.classList.toggle('blur');
     main_blur.classList.toggle('blur');
     footer_blur.classList.toggle('blur');
-}
-function redirect_imagens_evento(dado){
-    if(dado == 3){
-        redirect_4(true)
-    }else{
-        redirect_4(false)
-    }
-}
-function redirect_4(dado){
-    if(dado == true){
-        div_imagens[0].classList.add('redirect4_2_1');
-        div_imagens[3].classList.add('redirect4_2_4');
-        div_imagens[4].classList.add('redirect4_2_5');
-        div_imagens[5].classList.add('redirect4_2_6');
-        div_imagens[6].classList.add('redirect4_2');
-        div_imagens[7].classList.add('redirect4_2');
-        div_imagens[8].classList.add('redirect4_2');
-    }else{
-        div_imagens[0].classList.remove('redirect4_2_1');
-        div_imagens[3].classList.remove('redirect4_2_4');
-        div_imagens[4].classList.remove('redirect4_2_5');
-        div_imagens[5].classList.remove('redirect4_2_6');
-        div_imagens[6].classList.remove('redirect4_2');
-        div_imagens[7].classList.remove('redirect4_2');
-        div_imagens[8].classList.remove('redirect4_2');
-    }
 }
 img_imagem_ativada.addEventListener("mousemove", (d) => {
     const eixo_x = d.clientX - d.target.offsetLeft;

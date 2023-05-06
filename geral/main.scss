@@ -1,11 +1,6 @@
 @import "cores", "header", "footer", "main2", "wats";
 
-@font-face {
-    font-family: 'blabla';
-    src: url('../Fonte/blabla.otf');
-}
 *{
-    font-family: 'blabla';
     color:$cinza;
     margin: 0px;
     padding: 0px;

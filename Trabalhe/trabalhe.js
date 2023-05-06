@@ -4,6 +4,7 @@ var barra1 = document.getElementById('bc');
 var barra2 = document.getElementById('bm');
 var barra3 = document.getElementById('bb');
 var contador = 0; 
+var img = document.getElementById("imagem_js");
 
 function trocar(dado){
     contador += 1;
