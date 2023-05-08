@@ -3,9 +3,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: $azul;
+    background: linear-gradient(to right, $azul_claro 0%, #61bdf2 75%);
     p{
         margin:0px;
-        color:white;
     }
 }

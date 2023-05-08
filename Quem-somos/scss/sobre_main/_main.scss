@@ -1,5 +1,14 @@
 @media(max-width: 576px){
 }
+@media(max-width: 800px){
+    #main{
+        #informacao{
+            p{
+                width:85% !important;
+            }
+        }
+    }
+}
 @media(max-width: 770px){
     #main{
         .valores{
@@ -14,7 +23,15 @@
         }
     }
 }
-@media(min-width: 575px){
+@media(max-width: 575px){
+    #main{
+        #informacao{
+            p{
+                width:95% !important;
+                text-align: center;
+            }
+        }
+    }
 }
 #main{
     #informacao{

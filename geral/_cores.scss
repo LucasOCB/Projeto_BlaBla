@@ -1,6 +1,7 @@
 $vermelho:#ef5c48;
 $verde:#49c48f;
 $azul:#3b53a3;
+$azul_claro:#87d2fb;
 $roxo:#a84598;
 $laranja:#f16923;
 $cinza:#414f64;
@@ -43,6 +44,17 @@ $cinza:#414f64;
     &:focus{
         border-color: $azul;
         box-shadow: 0 0 5px $azul;
+    }
+}
+.btn_azul_claro{
+    color:$azul_claro;
+    &:hover{
+        background-color: $azul_claro;
+        border-color: $azul_claro;
+    }
+    &:focus{
+        border-color: $azul_claro;
+        box-shadow: 0 0 5px $azul_claro;
     }
 }
 .btn_roxo{
