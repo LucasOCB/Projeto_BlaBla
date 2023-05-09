@@ -576,6 +576,9 @@ body {
 }
 #main .descricao .texto P {
   width: 90%;
+  animation-name: animacao_texto;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 #main .descricao .texto .p {
   font-size: 2em;
@@ -719,6 +722,16 @@ body {
   display: none;
 }
 
+@keyframes animacao_texto {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
 @font-face {
   font-family: "blabla";
   src: url("../../Fonte/Omnes Bold/blabla.otf");

@@ -485,10 +485,16 @@ body {
 #main .vendedora .caixa .texto p {
   font-family: sans-serif;
   text-indent: 10px;
+  animation-duration: 2.5s;
 }
 #main .vendedora .caixa .texto h1 {
   font-size: 1.7em;
   text-align: center;
+  animation-duration: 1.5s;
+}
+#main .vendedora .caixa .texto p, #main .vendedora .caixa .texto h1 {
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
 
 body {
@@ -518,6 +524,21 @@ mark {
   font-family: sans-serif;
 }
 
+.animacao_texto {
+  animation-fill-mode: forwards;
+  animation-name: animacao_texto;
+}
+
+@keyframes animacao_texto {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
 @font-face {
   font-family: "blabla";
   src: url("../../Fonte/Omnes bold/blabla.otf");

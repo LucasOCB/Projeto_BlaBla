@@ -5,6 +5,15 @@ var barra2 = document.getElementById('bm');
 var barra3 = document.getElementById('bb');
 var contador = 0; 
 var img = document.getElementById("imagem_js");
+var textos = document.getElementsByClassName('pegar_animacao')
+
+window.addEventListener('scroll', () => {
+    for(let x = 0; x < textos.length; x++){
+        if(esta_visivel(textos[x])){
+            textos[x].classList.add('animacao_texto')
+        }
+    }
+})
 
 function trocar(dado){
     contador += 1;
@@ -37,5 +46,19 @@ function mudar(dado){
         lista_nav.classList.add('aparecer');
     }else if(dado == false){
         lista_nav.classList.remove('aparecer');
+    }
+}
+var visibleBottom = window.innerHeight || document.documentElement.clientHeight;
+var visibleTop = 0;
+function esta_visivel(element) {
+    var bounding = element.getBoundingClientRect();
+    var elementHeight = bounding.bottom - bounding.top;
+    var elementMiddle = bounding.top + elementHeight / 2;
+
+    return (elementMiddle > visibleTop && elementMiddle < visibleBottom);
+}
+for(let x = 0; x < textos.length; x++){
+    if(esta_visivel(textos[x])){
+        textos[x].classList.add('animacao_texto')
     }
 }

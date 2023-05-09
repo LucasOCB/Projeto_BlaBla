@@ -175,7 +175,6 @@ function mudar_imagens(numero){
     }
 }
 function foco_imagem(){
-    console.log("funciono")
     div_imagem_ativada.classList.toggle('foco_img')
     div_imagem_ativada.classList.toggle('foco_img_desaparecer')
     img_imagem_ativada.setAttribute("src", tipos_imagens[contador_tipoImagem][contador_imagem_hover])

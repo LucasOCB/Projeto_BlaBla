@@ -40,7 +40,10 @@
             text-align: center;
         }
         p{
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
             &:nth-child(0), &:nth-child(2), &:nth-child(4), &:nth-child(6){
+                animation-name: animacao_texto_ED;
                 text-indent: 20px;
                 width:70%;
                 padding-right:10%;
@@ -48,6 +51,7 @@
                 margin: 15px auto 0 auto;
             }
             &:nth-child(1), &:nth-child(3), &:nth-child(5){
+                animation-name: animacao_texto_DE;
                 width:70%;
                 padding-left:10%;
                 text-align: right;
@@ -67,6 +71,9 @@
             justify-content: space-around;
             margin:0 auto;
             padding:10px 0 10px 0px;
+            transition-duration: 1s;
+            position: relative;
+            left:-100%;
             *{
                 color:white;
             }
@@ -117,5 +124,24 @@
                 }
             }
         }
+    }
+}
+
+@keyframes animacao_texto_ED {
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+}
+@keyframes animacao_texto_DE {
+    from{
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

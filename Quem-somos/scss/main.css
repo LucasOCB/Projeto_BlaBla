@@ -444,7 +444,12 @@ body {
 #main #informacao h1 {
   text-align: center;
 }
+#main #informacao p {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 #main #informacao p:nth-child(0), #main #informacao p:nth-child(2), #main #informacao p:nth-child(4), #main #informacao p:nth-child(6) {
+  animation-name: animacao_texto_ED;
   text-indent: 20px;
   width: 70%;
   padding-right: 10%;
@@ -452,6 +457,7 @@ body {
   margin: 15px auto 0 auto;
 }
 #main #informacao p:nth-child(1), #main #informacao p:nth-child(3), #main #informacao p:nth-child(5) {
+  animation-name: animacao_texto_DE;
   width: 70%;
   padding-left: 10%;
   text-align: right;
@@ -469,6 +475,9 @@ body {
   justify-content: space-around;
   margin: 0 auto;
   padding: 10px 0 10px 0px;
+  transition-duration: 1s;
+  position: relative;
+  left: -100%;
 }
 #main .valores .v2 *, #main .valores .v3 *, #main .valores .v1 * {
   color: white;
@@ -512,6 +521,26 @@ body {
   font-size: 1.5em;
 }
 
+@keyframes animacao_texto_ED {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes animacao_texto_DE {
+  from {
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
 @font-face {
   font-family: "blabla";
   src: url("../../Fonte/Omnes Bold/blabla.otf");

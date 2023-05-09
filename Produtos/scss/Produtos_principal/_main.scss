@@ -173,6 +173,9 @@
             }
             P{
                 width:90%;
+                animation-name: animacao_texto;
+                animation-duration: 2s;
+                animation-fill-mode: forwards; 
             }
             .p{
                 font-size:2em;
@@ -186,7 +189,6 @@
     .botoes{
         margin:0 auto;
         transition-duration: 0.1s;
-        // padding:10px 0 20px 0;
         z-index: 9;
         .conteiner_cell{
             display: flex;
@@ -319,4 +321,14 @@ body{
 }
 .btn_imagem_desativar{
     display: none;
+}
+
+@keyframes animacao_texto {
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
 }

@@ -4,7 +4,18 @@ var barra1 = document.getElementById('bc');
 var barra2 = document.getElementById('bm');
 var barra3 = document.getElementById('bb');
 var contador = 0; 
+var valores = document.getElementsByClassName('valores_elementos')
 
+
+window.addEventListener('scroll', () => {
+    for(let x = 0; x < valores.length; x++){
+        if(esta_visivel(valores[x])){
+            valores[x].style.left = '0'
+        }else{
+            valores[x].style.left = '-100%'
+        }
+    }
+})
 function trocar(dado){
     contador += 1;
     if(dado == 2 && contador%2 == 1){
@@ -37,4 +48,13 @@ function mudar(dado){
     }else if(dado == false){
         lista_nav.classList.remove('aparecer');
     }
+}
+var visibleBottom = window.innerHeight || document.documentElement.clientHeight;
+var visibleTop = 0;
+function esta_visivel(element) {
+    var bounding = element.getBoundingClientRect();
+    var elementHeight = bounding.bottom - bounding.top;
+    var elementMiddle = bounding.top + elementHeight / 2;
+
+    return (elementMiddle > visibleTop && elementMiddle < visibleBottom);
 }
