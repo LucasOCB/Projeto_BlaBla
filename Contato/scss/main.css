@@ -90,7 +90,7 @@
   box-shadow: 0 0 5px #414f64;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 999px) {
   #header #div-cabecalho main {
     padding: 0 50px;
   }

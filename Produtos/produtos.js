@@ -36,11 +36,11 @@ for(let x = 0; x < imagens.length; x++){
 const imgs_1_descricao = ["foto de demonstração de camiseta"]
 const imgs_2_descricao = ["foto de demonstração de bermuda"]
 const imgs_3_descricao = ["foto de demonstração de conjunto"]
-const imgs_4_descricao = ["foto de deonstração de vestido"]
+const imgs_4_descricao = ["foto de demonstração de vestido"]
 const imgs_5_descricao = ["foto de demonstração de calça"]
-const imgs_6_descricao = ["foto de dmonstração de roupa de bebe"]
+const imgs_6_descricao = ["foto de demonstração de roupa de bebe"]
 const imgs_7_descricao = ["foto de demonstração de acesorios"]
-const imgs_8_descricao = ["foto de deonstração de pijama"]
+const imgs_8_descricao = ["foto de demonstração de pijama"]
 
 const imgs_1_camisetas = [
     "../img/produtos/camisetas/cami1.png",
@@ -189,6 +189,7 @@ function foco_imagem(){
     div_imagem_ativada.classList.toggle('foco_img')
     div_imagem_ativada.classList.toggle('foco_img_desaparecer')
     img_imagem_ativada.setAttribute("src", tipos_imagens[contador_tipoImagem][contador_imagem_hover])
+    img_imagem_ativada.setAttribute("alt", tipos_descricao[contador_tipoImagem])
     header_blur.classList.toggle('blur');
     main_blur.classList.toggle('blur');
     footer_blur.classList.toggle('blur');

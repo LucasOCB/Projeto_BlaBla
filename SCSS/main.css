@@ -90,7 +90,7 @@
   box-shadow: 0 0 5px #414f64;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 999px) {
   #header #div-cabecalho main {
     padding: 0 50px;
   }
@@ -472,17 +472,16 @@ body {
   }
 }
 @media (max-width: 500px) {
+  #main .imagens .conteiner .l2 .imgs {
+    gap: 0px !important;
+  }
   #main .imagens .conteiner .l2 .imgs .bloco1, #main .imagens .conteiner .l2 .imgs .bloco2 {
     flex-direction: column !important;
   }
   #main .imagens .conteiner .l2 .imgs .bloco1 *, #main .imagens .conteiner .l2 .imgs .bloco2 * {
     width: 100% !important;
-    height: 400px;
+    margin: 20px 0;
   }
-}
-#main #carrocel_header {
-  width: 100%;
-  height: 300px;
 }
 #main #carrocel_header #carouselExampleIndicators {
   height: 100%;
@@ -501,6 +500,7 @@ body {
   animation-fill-mode: forwards;
 }
 #main #carrocel_servicos {
+  margin-top: 20px;
   width: 100%;
   height: 120px;
 }
@@ -532,21 +532,14 @@ body {
 }
 #main .imagens .conteiner .l1, #main .imagens .conteiner .l2 {
   width: 50%;
-  height: 550px;
 }
 #main .imagens .conteiner .l1 .img {
   width: 100%;
   height: 100%;
 }
 #main .imagens .conteiner .l1 .img img {
-  background-color: red;
-  transition-duration: 1s;
   width: 100%;
   height: 100%;
-}
-#main .imagens .conteiner .l1 .img img:hover {
-  background-color: blue;
-  transform: scale(1.08em);
 }
 #main .imagens .conteiner .l2 .imgs {
   width: 100%;
@@ -557,18 +550,12 @@ body {
 }
 #main .imagens .conteiner .l2 .imgs .bloco1, #main .imagens .conteiner .l2 .imgs .bloco2 {
   display: flex;
-  gap: 20px;
+  gap: 4%;
   width: 100%;
   height: 50%;
 }
 #main .imagens .conteiner .l2 .imgs .bloco1 img, #main .imagens .conteiner .l2 .imgs .bloco2 img {
-  width: 50%;
-  background-color: red;
-  transition-duration: 1s;
-}
-#main .imagens .conteiner .l2 .imgs .bloco1 img:hover, #main .imagens .conteiner .l2 .imgs .bloco2 img:hover {
-  background-color: blue;
-  transform: scale(1.08em);
+  width: 48%;
 }
 #main .links {
   padding: 40px 0;

@@ -8,8 +8,25 @@ var contador = 0;
 var contador_reset = 0; 
 var mover_tamanho = 0;
 var tamanho_tela = document.documentElement.clientWidth;
+var imagens_post_principal = document.getElementsByClassName('img_post_principal')
 
+for(let x = 0; x < imagens_post_principal.length; x++){
+    if(document.documentElement.clientWidth < 750){
+        imagens_post_principal[x].setAttribute('src', `img/pagina_principal/main_post/img_post_principal_${x + 1}_vert.png`)
+    }else{
+        imagens_post_principal[x].setAttribute('src', `img/pagina_principal/main_post/img_post_principal_${x + 1}_hori.png`)
+    }
+}
 
+window.addEventListener('resize', function() {
+    let tam_tela = document.documentElement.clientWidth;
+    let atributo = imagens_post_principal[0].getAttribute('src')
+    if(tam_tela > 751 && atributo == `img/pagina_principal/main_post/img_post_principal_1_vert.png`){
+        mudar_postP_maior();
+    }else if(tam_tela < 750 && atributo == `img/pagina_principal/main_post/img_post_principal_1_hori.png`){
+        mudar_postP_menor();
+    }
+});
 
 function mudarBotao(){
     if(contador%2 == 1){
@@ -50,5 +67,16 @@ function atualizar_tamanho_tela() {
     tamanho_tela = document.documentElement.clientWidth;
     if(tamanho_tela <= 550){
         carrocel.style.right = `${0}%`;
+    }
+}
+
+function mudar_postP_maior(){
+    for(let x = 0; x < imagens_post_principal.length; x++){
+        imagens_post_principal[x].setAttribute('src', `img/pagina_principal/main_post/img_post_principal_${x + 1}_hori.png`)
+    }
+}
+function mudar_postP_menor(){
+    for(let x = 0; x < imagens_post_principal.length; x++){
+        imagens_post_principal[x].setAttribute('src', `img/pagina_principal/main_post/img_post_principal_${x + 1}_vert.png`)
     }
 }
