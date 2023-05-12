@@ -33,6 +33,15 @@ for(let x = 0; x < imagens.length; x++){
         contador_imagem_hover = x;
     })
 }
+const imgs_1_descricao = ["foto de demonstração de camiseta"]
+const imgs_2_descricao = ["foto de demonstração de bermuda"]
+const imgs_3_descricao = ["foto de demonstração de conjunto"]
+const imgs_4_descricao = ["foto de deonstração de vestido"]
+const imgs_5_descricao = ["foto de demonstração de calça"]
+const imgs_6_descricao = ["foto de dmonstração de roupa de bebe"]
+const imgs_7_descricao = ["foto de demonstração de acesorios"]
+const imgs_8_descricao = ["foto de deonstração de pijama"]
+
 const imgs_1_camisetas = [
     "../img/produtos/camisetas/cami1.png",
     "../img/produtos/camisetas/cami3.png",
@@ -122,6 +131,7 @@ const imgs_8_pijamas = [
     "../img/produtos/pijamas/9"
 ]
 const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bebes, imgs_7_acessorios, imgs_8_pijamas]
+const tipos_descricao = [imgs_1_descricao, imgs_2_descricao, imgs_3_descricao, imgs_4_descricao, imgs_5_descricao, imgs_6_descricao, imgs_7_descricao, imgs_8_descricao]
 function trocar(dado){
     contador += 1;
     if(dado == 2 && contador%2 == 1){
@@ -172,6 +182,7 @@ function mudar_imagens(numero){
     contador_tipoImagem = numero
     for(let contador = 0; contador < imagens.length; contador++){
         imagens[contador].setAttribute("src", tipos_imagens[numero][contador]);
+        imagens[contador].setAttribute("alt", tipos_descricao[numero]);
     }
 }
 function foco_imagem(){
