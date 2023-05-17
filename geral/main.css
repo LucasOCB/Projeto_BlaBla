@@ -407,6 +407,7 @@
   color: #414f64;
   margin: 0px;
   padding: 0px;
+  cursor: none !important;
 }
 
 li {
