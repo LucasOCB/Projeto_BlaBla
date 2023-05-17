@@ -109,26 +109,26 @@ const imgs_6_bebes = [
     "../img/produtos/bebe/bebe9.png"
 ];
 const imgs_7_acessorios = [
-    "../img/produtos/acessorios/1",
-    "../img/produtos/acessorios/2",
-    "../img/produtos/acessorios/3",
-    "../img/produtos/acessorios/4",
-    "../img/produtos/acessorios/5",
-    "../img/produtos/acessorios/6",
-    "../img/produtos/acessorios/7",
-    "../img/produtos/acessorios/8",
-    "../img/produtos/acessorios/9"
+    "../img/produtos/acessorios/aces1.png",
+    "../img/produtos/acessorios/aces2.png",
+    "../img/produtos/acessorios/aces3.png",
+    "../img/produtos/acessorios/aces4.png",
+    "../img/produtos/acessorios/aces5.png",
+    "../img/produtos/acessorios/aces6.png",
+    "../img/produtos/acessorios/aces7.png",
+    "../img/produtos/acessorios/aces8.png",
+    "../img/produtos/acessorios/aces9.png"
 ];
 const imgs_8_pijamas = [
-    "../img/produtos/pijamas/1",
-    "../img/produtos/pijamas/2",
-    "../img/produtos/pijamas/3",
-    "../img/produtos/pijamas/4",
-    "../img/produtos/pijamas/5",
-    "../img/produtos/pijamas/6",
-    "../img/produtos/pijamas/7",
-    "../img/produtos/pijamas/8",
-    "../img/produtos/pijamas/9"
+    "../img/produtos/pijamas/pij1.png",
+    "../img/produtos/pijamas/pij2.png",
+    "../img/produtos/pijamas/pij3.png",
+    "../img/produtos/pijamas/pij4.png",
+    "../img/produtos/pijamas/pij5.png",
+    "../img/produtos/pijamas/pij6.png",
+    "../img/produtos/pijamas/pij7.png",
+    "../img/produtos/pijamas/pij8.png",
+    "../img/produtos/pijamas/pij9.png"
 ]
 const tipos_imagens = [imgs_1_camisetas, imgs_2_bermudas, imgs_3_conjuntos, imgs_4_vestidos, imgs_5_calcas, imgs_6_bebes, imgs_7_acessorios, imgs_8_pijamas]
 const tipos_descricao = [imgs_1_descricao, imgs_2_descricao, imgs_3_descricao, imgs_4_descricao, imgs_5_descricao, imgs_6_descricao, imgs_7_descricao, imgs_8_descricao]

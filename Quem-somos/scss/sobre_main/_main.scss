@@ -40,22 +40,18 @@
             text-align: center;
         }
         p{
-            animation-duration: 3s;
+            font-family: sans-serif;
+            animation-duration: 1.3s;
             animation-fill-mode: forwards;
-            &:nth-child(0), &:nth-child(2), &:nth-child(4), &:nth-child(6){
+            &{
                 animation-name: animacao_texto_ED;
                 text-indent: 20px;
                 width:70%;
-                padding-right:10%;
                 text-align: left;
                 margin: 15px auto 0 auto;
             }
             &:nth-child(1), &:nth-child(3), &:nth-child(5){
                 animation-name: animacao_texto_DE;
-                width:70%;
-                padding-left:10%;
-                text-align: right;
-                margin: 15px auto 0 auto;
             }
         }
         

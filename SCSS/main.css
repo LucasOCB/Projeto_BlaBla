@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn_geral {
   padding: 6px 12px;
   border-radius: 0.25rem;
@@ -656,6 +657,14 @@ body {
     opacity: 1;
   }
 }
+.carousel-control-prev-icon {
+  background-image: url("../../img/formas/icons8-seta-longa-à-esquerda-48.png") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../../img/formas/icons8-seta-longa-à-direita-48.png") !important;
+}
+
 @font-face {
   font-family: "blabla";
   src: url("../Fonte/Omnes Bold/blabla.otf");

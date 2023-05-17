@@ -615,7 +615,7 @@ body {
 }
 #main .imagens_produtos .container_grid .img img {
   width: 100%;
-  border: 1px solid #ffb752;
+  border: 2px solid #ffb752;
 }
 #main .marcas {
   width: 100%;
