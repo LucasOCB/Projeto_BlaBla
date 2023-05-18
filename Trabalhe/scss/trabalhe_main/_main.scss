@@ -71,12 +71,10 @@
                 p{
                     font-family: sans-serif;
                     text-indent:10px;
-                    animation-duration: 2.5s;
                 }
                 h1{
                     font-size: 1.7em;
                     text-align:center;
-                    animation-duration: 1.5s;
                 }
                 p, h1{
                     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
@@ -111,8 +109,10 @@ mark{
     padding-left:10px !important;
     font-family: sans-serif;
 }
-.animacao_texto{
+.pegar_animacao{
     animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-duration: 3s;
     animation-name: animacao_texto;
 }
 @keyframes animacao_texto {
@@ -121,6 +121,5 @@ mark{
     }
     to{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
     }
 }

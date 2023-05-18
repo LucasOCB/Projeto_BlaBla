@@ -91,10 +91,15 @@ var colors = [
 
 var focus_circle = document.getElementsByClassName('focus_circle')
 for(let x = 0; x < focus_circle.length; x++){
-    focus_circle[x].addEventListener("click", () => {
-        colors = "#FA0034"
-        animateCircles();
-        console.log("teste")
+    focus_circle[x].addEventListener("mouseover", () => {
+        for(let y = 0; y < circles.length; y++){
+            circles[y].style.background = "#f16923"
+        }
+    })
+    focus_circle[x].addEventListener("mouseout", () => {
+        for(let y = 0; y < circles.length; y++){
+            circles[y].style.background = "#87d2fb"
+        }
     })
 }
 circles.forEach(function (circle, index) {
