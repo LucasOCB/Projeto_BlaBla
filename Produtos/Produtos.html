@@ -212,9 +212,15 @@
     </footer>
     <div id="div_imagem_ativada" class="foco_img_desaparecer">
       <a href="#">
-        <img src="" alt="foco em imagem separada escolhida pelo usuario" id="img_imagem_ativada">
+        <img class="imagem_escolhida" src="" alt="foco em imagem separada escolhida pelo usuario" id="img_imagem_ativada">
       </a>
       <div class="btn_imagem_desativar focus_circle" onclick="foco_imagem(), foco_imagem()">X</div>
+      <div class="seta_prox">
+        <img class="focus_circle" src="../img/formas/icons8-seta-longa-à-direita-48.png" alt="" onclick="prox_foco_imagem()">
+      </div>
+      <div class="seta_ante">
+        <img class="focus_circle" src="../img/formas/icons8-seta-longa-à-esquerda-48.png" alt="" onclick="ante_foco_imagem()">
+      </div>
     </div>
     <script src="produtos.js"></script>
 </body>

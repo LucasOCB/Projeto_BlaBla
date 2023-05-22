@@ -736,6 +736,28 @@ body {
   display: none;
 }
 
+.seta_prox, .seta_ante {
+  position: absolute;
+  width: 40px;
+  top: 48%;
+  transition-duration: 1s;
+  z-index: 999999999;
+}
+.seta_prox:hover, .seta_ante:hover {
+  transform: scale(1.2);
+}
+.seta_prox img, .seta_ante img {
+  width: 100%;
+}
+
+.seta_prox {
+  right: 5%;
+}
+
+.seta_ante {
+  left: 5%;
+}
+
 @keyframes animacao_texto {
   from {
     -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);

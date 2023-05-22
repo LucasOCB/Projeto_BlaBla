@@ -21,7 +21,6 @@ var contador_imagem_hover = 0;
 var contador_tipoImagem = 0;
 
 
-div_imagem_ativada.addEventListener("click", () => {foco_imagem()})
 for(let x = 0; x < div_imagens.length; x++){
     div_imagens[x].addEventListener("click", () => {
         foco_imagem(contador_imagem_hover);
@@ -33,6 +32,7 @@ for(let x = 0; x < imagens.length; x++){
         contador_imagem_hover = x;
     })
 }
+div_imagem_ativada.addEventListener("click", () => {foco_imagem()})
 const imgs_1_descricao = ["foto de demonstração de camiseta"]
 const imgs_2_descricao = ["foto de demonstração de bermuda"]
 const imgs_3_descricao = ["foto de demonstração de conjunto"]
@@ -185,14 +185,40 @@ function mudar_imagens(numero){
         imagens[contador].setAttribute("alt", tipos_descricao[numero]);
     }
 }
-function foco_imagem(){
-    div_imagem_ativada.classList.toggle('foco_img')
-    div_imagem_ativada.classList.toggle('foco_img_desaparecer')
-    img_imagem_ativada.setAttribute("src", tipos_imagens[contador_tipoImagem][contador_imagem_hover])
-    img_imagem_ativada.setAttribute("alt", tipos_descricao[contador_tipoImagem])
-    header_blur.classList.toggle('blur');
-    main_blur.classList.toggle('blur');
-    footer_blur.classList.toggle('blur');
+//dado = saber que será ativada por seta
+function foco_imagem(dado){
+    if(dado == "seta"){
+        img_imagem_ativada.setAttribute("src", tipos_imagens[contador_tipoImagem][contador_imagem_hover])
+        img_imagem_ativada.setAttribute("alt", tipos_descricao[contador_tipoImagem])
+    }else{
+        div_imagem_ativada.classList.toggle('foco_img')
+        div_imagem_ativada.classList.toggle('foco_img_desaparecer')
+        img_imagem_ativada.setAttribute("src", tipos_imagens[contador_tipoImagem][contador_imagem_hover])
+        img_imagem_ativada.setAttribute("alt", tipos_descricao[contador_tipoImagem])
+        header_blur.classList.toggle('blur');
+        main_blur.classList.toggle('blur');
+        footer_blur.classList.toggle('blur');
+    }
+}
+function prox_foco_imagem(){
+    foco_imagem()
+    if(contador_imagem_hover == 8){
+        contador_imagem_hover = 0;
+        foco_imagem("seta")
+    }else{
+        contador_imagem_hover++
+        foco_imagem("seta");
+    }
+}
+function ante_foco_imagem(){
+    foco_imagem();
+    if(contador_imagem_hover == 0){
+        contador_imagem_hover = 8
+        foco_imagem("seta")
+    }else{
+        contador_imagem_hover--
+        foco_imagem("seta");
+    }
 }
 img_imagem_ativada.addEventListener("mousemove", (d) => {
     const eixo_x = d.clientX - d.target.offsetLeft;

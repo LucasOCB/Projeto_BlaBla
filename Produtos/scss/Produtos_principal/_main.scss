@@ -76,10 +76,10 @@
         top:118px;
     }
     .foco_img{
-        img{
-            width:40%;
-            max-width:400px;
-        }
+            img{
+                width:40% ;
+                max-width:400px;
+            }
     }
 }
 @media(max-width:570px){
@@ -321,6 +321,25 @@ body{
 }
 .btn_imagem_desativar{
     display: none;
+}
+.seta_prox, .seta_ante{
+    position: absolute;
+    width:40px;
+    top:48%;
+    transition-duration: 1s;
+    z-index: 999999999;
+    &:hover{
+        transform: scale(1.2);
+    }
+    img{
+        width:100%;
+    }
+}
+.seta_prox{
+    right:5%;
+}
+.seta_ante{
+    left:5%;
 }
 
 @keyframes animacao_texto {
