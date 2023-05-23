@@ -1,5 +1,11 @@
 @import "cores", "header", "footer", "main2", "wats";
 
+@media(max-width: 450px){
+    .circle{
+        display:none;
+    }
+}
+
 *{
     color:$cinza;
     margin: 0px;

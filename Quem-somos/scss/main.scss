@@ -12,6 +12,10 @@ body{
     min-height: 300px;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 ::-webkit-scrollbar{
     width:12px;
     background-color: rgb(200,200,200);
