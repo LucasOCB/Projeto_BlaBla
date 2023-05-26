@@ -543,6 +543,10 @@ body {
   width: 250px;
   height: 100%;
 }
+#main #carrocel_servicos .conteiner .painel .elemento img {
+  width: 100%;
+  height: 100%;
+}
 #main .imagens {
   padding: 20px;
 }
