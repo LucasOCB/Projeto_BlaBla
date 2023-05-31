@@ -208,7 +208,7 @@
 }
 #header #cabecalho {
   height: 128px;
-  background: linear-gradient(to right, #87d2fb 0%, #61bdf2 75%);
+  background: #61bdf2;
 }
 #header #cabecalho .img-logo {
   display: flex;
@@ -498,9 +498,9 @@ body {
   #main .imagens .conteiner .l2 .imgs .bloco1, #main .imagens .conteiner .l2 .imgs .bloco2 {
     flex-direction: column !important;
   }
-  #main .imagens .conteiner .l2 .imgs .bloco1 *, #main .imagens .conteiner .l2 .imgs .bloco2 * {
+  #main .imagens .conteiner .l2 .imgs .bloco1 a, #main .imagens .conteiner .l2 .imgs .bloco2 a {
     width: 100% !important;
-    margin: 20px 0;
+    margin: 10px 0;
   }
 }
 #main #carrocel_header #carouselExampleIndicators {
@@ -557,11 +557,30 @@ body {
 #main .imagens .conteiner .l1, #main .imagens .conteiner .l2 {
   width: 50%;
 }
+#main .imagens .conteiner .l1 img, #main .imagens .conteiner .l2 img {
+  width: 100%;
+}
+#main .imagens .conteiner .l1 a, #main .imagens .conteiner .l2 a {
+  border: 2px solid #ffb752;
+  overflow: hidden;
+}
+#main .imagens .conteiner .l1 a img, #main .imagens .conteiner .l2 a img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+#main .imagens .conteiner .l1 a img:hover, #main .imagens .conteiner .l2 a img:hover {
+  transform: scale(1.05);
+}
 #main .imagens .conteiner .l1 .img {
   width: 100%;
   height: 100%;
 }
-#main .imagens .conteiner .l1 .img img {
+#main .imagens .conteiner .l1 .img a {
+  display: block;
+  width: 100%;
+}
+#main .imagens .conteiner .l1 .img a img {
   width: 100%;
   height: 100%;
 }
@@ -578,7 +597,7 @@ body {
   width: 100%;
   height: 50%;
 }
-#main .imagens .conteiner .l2 .imgs .bloco1 img, #main .imagens .conteiner .l2 .imgs .bloco2 img {
+#main .imagens .conteiner .l2 .imgs .bloco1 a, #main .imagens .conteiner .l2 .imgs .bloco2 a {
   width: 48%;
 }
 #main .links {

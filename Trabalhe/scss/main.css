@@ -208,7 +208,7 @@
 }
 #header #cabecalho {
   height: 128px;
-  background: linear-gradient(to right, #87d2fb 0%, #61bdf2 75%);
+  background: #61bdf2;
 }
 #header #cabecalho .img-logo {
   display: flex;
