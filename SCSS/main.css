@@ -699,6 +699,10 @@ body {
     opacity: 1;
   }
 }
+.carousel-indicators [data-bs-target] {
+  background-color: #414f64 !important;
+}
+
 .carousel-control-prev-icon {
   background-image: url("../../img/formas/icons8-seta-longa-à-esquerda-48.png") !important;
 }
