@@ -437,6 +437,10 @@ body {
   z-index: 99999999; /* so that it stays on top of all other elements */
 }
 
+.texto_leitura {
+  font-family: sans-serif !important;
+}
+
 @media (max-width: 980px) {
   #main .vendedora .caixa {
     flex-direction: column !important;
@@ -503,7 +507,6 @@ body {
 }
 #main .vendedora .caixa .texto p {
   font-family: sans-serif;
-  text-indent: 10px;
 }
 #main .vendedora .caixa .texto h1 {
   font-size: 1.7em;

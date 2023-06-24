@@ -436,6 +436,10 @@ body {
   z-index: 99999999; /* so that it stays on top of all other elements */
 }
 
+.texto_leitura {
+  font-family: sans-serif !important;
+}
+
 #main {
   display: flex;
   justify-content: center;

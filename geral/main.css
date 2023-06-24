@@ -434,4 +434,8 @@ body {
   transition-property: background-color, background 2s !important;
   pointer-events: none;
   z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+.texto_leitura {
+  font-family: sans-serif !important;
 }/*# sourceMappingURL=main.css.map */

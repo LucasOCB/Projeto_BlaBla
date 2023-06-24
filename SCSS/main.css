@@ -437,6 +437,10 @@ body {
   z-index: 99999999; /* so that it stays on top of all other elements */
 }
 
+.texto_leitura {
+  font-family: sans-serif !important;
+}
+
 @media (max-width: 920px) {
   #main .links .flex {
     flex-direction: column;

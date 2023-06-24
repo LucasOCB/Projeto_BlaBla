@@ -436,6 +436,10 @@ body {
   z-index: 99999999; /* so that it stays on top of all other elements */
 }
 
+.texto_leitura {
+  font-family: sans-serif !important;
+}
+
 @media (max-width: 800px) {
   #main #informacao p {
     width: 85% !important;
@@ -470,7 +474,6 @@ body {
 }
 #main #informacao p {
   animation-name: animacao_texto_ED;
-  text-indent: 20px;
   width: 70%;
   text-align: left;
   margin: 15px auto 0 auto;
@@ -507,7 +510,7 @@ body {
   background: #49c48f;
 }
 #main .valores .v2 {
-  background: #87d2fb;
+  background: #56c4ff;
 }
 #main .valores .v3 {
   background: #ef5c48;
@@ -570,6 +573,10 @@ body {
 
 a {
   text-decoration: none !important;
+}
+
+.texto_leitura {
+  font-family: sans-serif !important;
 }
 
 ::-webkit-scrollbar {
