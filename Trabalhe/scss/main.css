@@ -502,7 +502,7 @@ body {
   width: 50%;
   align-self: center;
 }
-#main .vendedora .caixa .texto * {
+#main .vendedora .caixa .texto h1 {
   margin: 60px 0;
 }
 #main .vendedora .caixa .texto p {

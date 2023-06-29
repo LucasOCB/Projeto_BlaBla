@@ -159,6 +159,7 @@
                 width:1307px;
                 .elemento{
                     background-color:rgba(255, 0, 0, 0.885);
+                    border:2px solid $laranja;
                     width:250px;
                     height:100%;
                     img{
@@ -298,43 +299,12 @@
 //animação
 .setaSumir{
      opacity:0;
-     img{
-         &:hover{
-            cursor: default !important;
-        }
-     }
-}
-.frase-ativa{
-    animation-name: frase;
-    animation-duration: 2.4s;
-    animation-fill-mode: forwards;
-}
-.img-ativo{
-    animation-name: guaxinim;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
 .reset_carrosel{
     display: none !important;
 }
 .seta_carrocel{
     background-color: black;
-}
-@keyframes guaxinim{
-    from{
-        top:100%px;
-    }
-    to{
-        top:30px;
-    }
-}
-@keyframes frase{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
 }
 .carousel-indicators [data-bs-target]{
     background-color: $cinza !important;
