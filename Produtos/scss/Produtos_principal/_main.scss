@@ -50,7 +50,7 @@
         }
         .descricao{
             flex-direction: column;
-            border:1px solid black;
+            // border:1px solid black;
         }
         .botoes{
             width:100%;
@@ -213,7 +213,7 @@
                 max-height:100%;
                 img{
                     width:100%;
-                    border: 2px solid #ffb752;
+                    border: 2px solid $vermelho;
                 }
             }
 

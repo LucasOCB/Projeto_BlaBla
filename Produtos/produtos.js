@@ -180,6 +180,36 @@ function fixar_botoes(dado1){
 }
 function mudar_imagens(numero){
     contador_tipoImagem = numero
+    for(let x = 0; x < 9; x++){
+        switch(numero){
+            case 0:
+                imagens[x].style.border = "2px solid #ef5c48";
+               break;
+            case 1:
+                imagens[x].style.border = "2px solid #49c48f";
+               break;
+            case 2:
+                imagens[x].style.border = "2px solid #3b53a3";
+               break;
+            case 3:
+                imagens[x].style.border = "2px solid #f16923";
+               break;
+            case 4:
+                imagens[x].style.border = "2px solid #a84598";
+               break;
+            case 7:
+                imagens[x].style.border = "2px solid #87d2fb";
+               break;
+            case 5:
+                imagens[x].style.border = "2px solid #49c48f";
+               break;
+            case 6:
+                imagens[x].style.border = "2px solid #414f64";
+               break;
+            default:
+                break
+        }
+    }
     for(let contador = 0; contador < imagens.length; contador++){
         imagens[contador].setAttribute("src", tipos_imagens[numero][contador]);
         imagens[contador].setAttribute("alt", tipos_descricao[numero]);

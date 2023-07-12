@@ -488,7 +488,6 @@ body {
   }
   #main .descricao {
     flex-direction: column;
-    border: 1px solid black;
   }
   #main .botoes {
     width: 100%;
@@ -638,7 +637,7 @@ body {
 }
 #main .imagens_produtos .container_grid .img img {
   width: 100%;
-  border: 2px solid #ffb752;
+  border: 2px solid #ef5c48;
 }
 #main .marcas {
   width: 100%;
