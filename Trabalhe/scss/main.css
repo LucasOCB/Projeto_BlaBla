@@ -434,7 +434,7 @@ body {
   left: 0;
   transition-property: background-color, background 2s !important;
   pointer-events: none;
-  z-index: 99999999; /* so that it stays on top of all other elements */
+  z-index: 99999999;
 }
 
 .texto_leitura {
@@ -563,7 +563,7 @@ mark {
 }
 @font-face {
   font-family: "blabla";
-  src: url("../../Fonte/Omnes/blabla.otf");
+  src: url("../../Fonte/Omnes Bold/blabla.otf");
 }
 * {
   font-family: "blabla";
