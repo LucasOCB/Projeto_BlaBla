@@ -778,7 +778,7 @@ body {
 }
 @font-face {
   font-family: "blabla";
-  src: url("../../Fonte/Omnes-Bold/blabla.otf");
+  src: url("../../Fonte/Omnes/blabla.otf");
 }
 * {
   font-family: "blabla";
