@@ -1,5 +1,10 @@
 @import "cores", "header", "footer", "main2", "wats";
 
+@media(min-width:450px){
+    *{
+        cursor:none;
+    }
+}
 @media(max-width: 450px){
     .circle{
         display:none;
@@ -10,7 +15,6 @@
     color:$cinza;
     margin: 0px;
     padding: 0px;
-    cursor:none !important;
 }
 li{
     list-style: none;
